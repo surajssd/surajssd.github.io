@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://example.org/index.xml</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Mar 2017 00:31:57 +0530</lastBuildDate>
+    <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>test kompose</title>
+      <link>http://example.org/post/test-kompose/</link>
+      <pubDate>Tue, 14 Mar 2017 00:31:57 +0530</pubDate>
+      
+      <guid>http://example.org/post/test-kompose/</guid>
+      <description>&lt;p&gt;I generally do kompose package testing for fedora. So here are the steps I follow.&lt;/p&gt;
+
+&lt;p&gt;Spin the fedora environment, let&amp;rsquo;s say fedora 25.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ docker run -it fedora:25 bash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once inside the container download the latest package from the testing repo:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# dnf --enablerepo updates-testing -y install kompose
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: Make sure you download the latest release, there might be conditions that you download the old package.&lt;/p&gt;
+
+&lt;p&gt;Now having the package is not enough, we need the functional tests, which is in the source repo. But before we clone the repo, we need some dependencies like &lt;code&gt;make&lt;/code&gt; and &lt;code&gt;jq&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# dnf install -y jq make
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now lets get the functional tests:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# git clone https://github.com/kubernetes-incubator/kompose/
+# cd kompose
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Run tests:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# make test-cmd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If all tests pass then just give a karma for it on the release page.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
