@@ -7,8 +7,7 @@
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
-    <priority>0</priority>
+    <loc>http://example.org/about/</loc>
   </url>
   
   <url>
@@ -25,6 +24,11 @@
   
   <url>
     <loc>http://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/topics/</loc>
     <priority>0</priority>
   </url>
   
