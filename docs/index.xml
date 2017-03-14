@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My little hacks</title>
-    <link>http://suraj.io/index.xml</link>
+    <link>http://suraj.io/docs/index.xml</link>
     <description>Recent content on My little hacks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Mar 2017 00:31:57 +0530</lastBuildDate>
-    <atom:link href="http://suraj.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://suraj.io/docs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Testing &#39;fedora&#39; and &#39;CentOS&#39; kompose package</title>
-      <link>http://suraj.io/post/test-kompose/</link>
+      <link>http://suraj.io/docs/post/test-kompose/</link>
       <pubDate>Tue, 14 Mar 2017 00:31:57 +0530</pubDate>
       
-      <guid>http://suraj.io/post/test-kompose/</guid>
+      <guid>http://suraj.io/docs/post/test-kompose/</guid>
       <description>
 
 &lt;p&gt;I generally do &lt;code&gt;kompose&lt;/code&gt; package testing for fedora and CentOS. So here are the steps I follow.&lt;/p&gt;
@@ -76,10 +76,10 @@
     
     <item>
       <title></title>
-      <link>http://suraj.io/about/</link>
+      <link>http://suraj.io/docs/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://suraj.io/about/</guid>
+      <guid>http://suraj.io/docs/about/</guid>
       <description>
 
 &lt;h2 id=&#34;hey&#34;&gt;hey&lt;/h2&gt;
