@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Testing &#39;fedora&#39; and &#39;CentOS&#39; kompose package</title>
+  <title>404 Page not found</title>
   
   <meta name="author" content=""/>
   <meta name="generator" content="Hugo 0.20-DEV" />
@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
 
   
-  <meta property="og:title" content="Testing &#39;fedora&#39; and &#39;CentOS&#39; kompose package" />
+  <meta property="og:title" content="404 Page not found" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/post/test-kompose/" />
+  <meta property="og:url" content="/404/" />
   <meta property="og:image" content="/" />
   
 </head>
@@ -82,114 +82,17 @@
 </nav>
 
 
-    <div role="main" class="container main-content">
-
-      
-
-
-
+      <div role="main" class="container main-content">
   
-
-  <header class="header-section ">
-  
-  <div class="intro-header no-img">
-      <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-heading">
-          <h1>Testing &#39;fedora&#39; and &#39;CentOS&#39; kompose package</h1>
-      
-      
-      
-			<span class="post-meta">Posted on March 14, 2017 | written by  </span>
-      
-        </div>
-      </div>
-    </div>
-  </div>
-
-  </div>
-  </header>
-
+  	    <div class="text-center">
+    	      <h1>Whoops, this page doesn't exist.</h1>
+    	      <h1>Move along. (404 error)</h1>
+    	      <br/>
+    
+	      <img src="http://example.org//img/404-southpark.jpg" />
+	    </div>
 	  
-      
-        <div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
-          
-
-<p>I generally do <code>kompose</code> package testing for fedora and CentOS. So here are the steps I follow.</p>
-
-<p><strong>Note</strong>: All the commands that start with <code>#</code> are inside the container.</p>
-
-<h2 id="fedora">Fedora</h2>
-
-<p>Spin the fedora test environment, let&rsquo;s say fedora 25, I do it in containers.</p>
-
-<pre><code class="language-bash">$ docker run -it fedora:25 bash
-</code></pre>
-
-<p>Once inside the container download the latest package from the testing repo:</p>
-
-<pre><code class="language-bash"># dnf --enablerepo updates-testing -y install kompose
-</code></pre>
-
-<p><strong>Note</strong>: Make sure you download the latest release, there might be conditions that you download the old package.</p>
-
-<p>Now having the package is not enough, we need to run the functional tests, which is in the source repoistory. But before we clone the repo, we need some dependencies like <code>make</code> and <code>jq</code>. So install them using packages.</p>
-
-<pre><code class="language-bash"># dnf install -y jq make
-</code></pre>
-
-<h2 id="centos">CentOS</h2>
-
-<p>Spin the CentOS environment in container.</p>
-
-<pre><code class="language-bash">$ docker run -it centos bash
-</code></pre>
-
-<p>Install kompose from <code>epel-testing</code> repo:</p>
-
-<pre><code class="language-bash"># yum --enablerepo=epel-testing -y install kompose
-</code></pre>
-
-<p>And packages needed to run tests:</p>
-
-<pre><code class="language-bash"># yum install -y jq make
-</code></pre>
-
-<h2 id="functional-tests">Functional tests</h2>
-
-<p>Now lets get the functional tests:</p>
-
-<pre><code># git clone https://github.com/kubernetes-incubator/kompose/
-# cd kompose
-</code></pre>
-
-<p>Run tests:</p>
-
-<pre><code class="language-bash"># make test-cmd
-</code></pre>
-
-<p>If all tests pass then just give a karma for it on the release page.</p>
-
-      </article>
-
-      <ul class="pager blog-pager">
-        
-        
-      </ul>
-
-      
-
-    </div>
-  </div>
-</div>
-
-      
-
-    </div>
+	  </div>
 
     <footer>
   <div class="container">
