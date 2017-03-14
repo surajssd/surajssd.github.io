@@ -2,33 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/suraj.io/post/test-kompose/</loc>
+    <loc>http://suraj.io/post/test-kompose/</loc>
     <lastmod>2017-03-14T00:31:57+05:30</lastmod>
   </url>
   
   <url>
-    <loc>/suraj.io/about/</loc>
+    <loc>http://suraj.io/about/</loc>
   </url>
   
   <url>
-    <loc>/suraj.io/</loc>
-    <lastmod>2017-03-14T00:31:57+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/suraj.io/post/</loc>
+    <loc>http://suraj.io/</loc>
     <lastmod>2017-03-14T00:31:57+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/suraj.io/tags/</loc>
+    <loc>http://suraj.io/post/</loc>
+    <lastmod>2017-03-14T00:31:57+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/suraj.io/topics/</loc>
+    <loc>http://suraj.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://suraj.io/topics/</loc>
     <priority>0</priority>
   </url>
   
