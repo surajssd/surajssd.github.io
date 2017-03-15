@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Suraj Deshmukh</title>
-    <link>https://suraj.io/tags/index.xml</link>
+    <link>http://suraj.io/tags/index.xml</link>
     <description>Recent content in Tags on Suraj Deshmukh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2017 | Follow on &lt;a href=&#34;https://twitter.com/surajd_&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://github.com/mgjohansen/hucore.git&#34; target=&#34;_blank&#34;&gt;Hucore theme&lt;/a&gt; &amp; &lt;a href=&#34;http://gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; ♥</copyright>
     <lastBuildDate>Wed, 15 Mar 2017 14:16:43 +0530</lastBuildDate>
-    <atom:link href="https://suraj.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://suraj.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Centos</title>
-      <link>https://suraj.io/tags/centos/</link>
+      <link>http://suraj.io/tags/centos/</link>
       <pubDate>Wed, 15 Mar 2017 14:16:43 +0530</pubDate>
       
-      <guid>https://suraj.io/tags/centos/</guid>
+      <guid>http://suraj.io/tags/centos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fedora</title>
-      <link>https://suraj.io/tags/fedora/</link>
+      <link>http://suraj.io/tags/fedora/</link>
       <pubDate>Tue, 14 Mar 2017 00:31:57 +0530</pubDate>
       
-      <guid>https://suraj.io/tags/fedora/</guid>
+      <guid>http://suraj.io/tags/fedora/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Openshift</title>
-      <link>https://suraj.io/tags/openshift/</link>
+      <link>http://suraj.io/tags/openshift/</link>
       <pubDate>Wed, 15 Mar 2017 14:16:43 +0530</pubDate>
       
-      <guid>https://suraj.io/tags/openshift/</guid>
+      <guid>http://suraj.io/tags/openshift/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rpm</title>
-      <link>https://suraj.io/tags/rpm/</link>
+      <link>http://suraj.io/tags/rpm/</link>
       <pubDate>Wed, 15 Mar 2017 14:16:43 +0530</pubDate>
       
-      <guid>https://suraj.io/tags/rpm/</guid>
+      <guid>http://suraj.io/tags/rpm/</guid>
       <description></description>
     </item>
     
