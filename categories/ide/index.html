@@ -2,6 +2,8 @@
 
 
     
+        
+    
 
 
 
@@ -11,7 +13,7 @@
 <html>
     <head>
         
-            <title>Fedora - Suraj Deshmukh</title>
+            <title>Ide Posts - Suraj Deshmukh</title>
         
 
         <meta charset="utf-8" />
@@ -28,14 +30,14 @@
         
 
         
-        <meta property="og:title" content="Fedora" />
+        <meta property="og:title" content="Ide" />
 <meta property="og:description" content="My little hacks" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://suraj.io/tags/fedora/" />
+<meta property="og:url" content="http://suraj.io/categories/ide/" />
 
 
 
-<meta property="og:updated_time" content="2017-03-14T00:31:57&#43;05:30"/>
+<meta property="og:updated_time" content="2017-03-17T14:41:51&#43;05:30"/>
 
 
 
@@ -47,7 +49,7 @@
 
 
         
-<meta itemprop="name" content="Fedora">
+<meta itemprop="name" content="Ide">
 <meta itemprop="description" content="My little hacks">
 
 
@@ -204,11 +206,8 @@
 
     
     <div id="main">
+        <h1>Ide</h1>
         
-        
-            
-        
-
         
             <article class="post">
     <header>
@@ -281,148 +280,6 @@ Shortcuts  Ctrl + Shift + A  Find any action in IDE
 </article>
 
         
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="http://suraj.io/post/packaging-kompose-for-centos-paas-sig/">Packaging &#39;kompose&#39; for centos paas sig</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-            
-        
-
-        <time class="published"
-            datetime='2017-03-15'>
-            March 15, 2017</time>
-        <span class="author">Suraj Deshmukh</span>
-        
-            <p>2 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-
-    <p>Following are steps to package kompose for CentOS pass SIG.
-Note: This is a living document and will be updated from time to time.
-For release 0.3.0
-Pull sprm
-$ wget <a href="https://kojipkgs.fedoraproject.org//packages/kompose/0.3.0/0.1.git135165b.el7/src/kompose-0.3.0-0.1.git135165b.el7.src.rpm">https://kojipkgs.fedoraproject.org//packages/kompose/0.3.0/0.1.git135165b.el7/src/kompose-0.3.0-0.1.git135165b.el7.src.rpm</a>  Build the rpm on cbs from src.rpm
-$ cbs build paas7-openshift-common-el7 ./kompose-0.3.0-0.1.git135165b.el7.src.rpm  Once build is done successfully goto build page and download the rpm that is built for x86_64
-The page where builds were listed: <a href="https://cbs.centos.org/koji/taskinfo?taskID=169117">https://cbs.centos.org/koji/taskinfo?taskID=169117</a> The page where this particular build happened and where I had download link to rpm: <a href="https://cbs">https://cbs</a>.</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="http://suraj.io/post/packaging-kompose-for-centos-paas-sig/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-
-                    
-                        Category
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categoriespackaging'>packaging</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="http://suraj.io/post/test-kompose/">Testing &#39;fedora&#39; and &#39;CentOS&#39; kompose package</a></h2>
-        
-        
-    </div>
-    <div class="meta">
-        
-            
-        
-
-        <time class="published"
-            datetime='2017-03-14'>
-            March 14, 2017</time>
-        <span class="author">Suraj Deshmukh</span>
-        
-            <p>1 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-
-    <p>I generally do kompose package testing for fedora and CentOS. So here are the steps I follow.
-Note: All the commands that start with # are inside the container.
-Fedora Spin the fedora test environment, let&rsquo;s say fedora 25, I do it in containers.
-$ docker run -it fedora:25 bash  Once inside the container download the latest package from the testing repo:</p>
-
-<h1 id="dnf-enablerepo-updates-testing-y-install-kompose-note-make-sure-you-download-the-latest-release-there-might-be-conditions-that-you-download-the-old-package">dnf &ndash;enablerepo updates-testing -y install kompose  Note: Make sure you download the latest release, there might be conditions that you download the old package.</h1>
-</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="http://suraj.io/post/test-kompose/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-
-                    
-                        Category
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categoriespackaging'>packaging</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
 
         
 <ul class="actions pagination">
@@ -431,8 +288,7 @@ $ docker run -it fedora:25 bash  Once inside the container download the latest p
     
 
     
-        <li><a href="/tags/fedora/page/2/"
-                class="button big next">Next Page</a></li>
+        <li><a href="#" class="disabled button big next">Next Page</a></li>
     
 </ul>
 
@@ -456,7 +312,7 @@ $ docker run -it fedora:25 bash  Once inside the container download the latest p
             
             <ul class="icons">
                 
-                    <li><a href="http://suraj.io/tags/fedora/index.xml" type="application/rss+xml"
+                    <li><a href="http://suraj.io/categories/ide/index.xml" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 
                 
@@ -644,7 +500,7 @@ $ docker run -it fedora:25 bash  Once inside the container download the latest p
         <section id="footer">
             <ul class="icons">
                 
-                    <li><a href="http://suraj.io/tags/fedora/index.xml" type="application/rss+xml"
+                    <li><a href="http://suraj.io/categories/ide/index.xml" type="application/rss+xml"
                         target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 
                 

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://suraj.io/post/intellij-shortcuts/</loc>
+    <lastmod>2017-03-17T14:41:51+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>http://suraj.io/post/packaging-kompose-for-centos-paas-sig/</loc>
     <lastmod>2017-03-15T14:16:43+05:30</lastmod>
   </url>
@@ -29,6 +34,18 @@
   </url>
   
   <url>
+    <loc>http://suraj.io/categories/ide/</loc>
+    <lastmod>2017-03-17T14:41:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://suraj.io/categories/intellij/</loc>
+    <lastmod>2017-03-17T14:41:51+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://suraj.io/tags/openshift/</loc>
     <lastmod>2017-03-15T14:16:43+05:30</lastmod>
     <priority>0</priority>
@@ -42,7 +59,7 @@
   
   <url>
     <loc>http://suraj.io/post/</loc>
-    <lastmod>2017-03-15T14:16:43+05:30</lastmod>
+    <lastmod>2017-03-17T14:41:51+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,7 +71,7 @@
   
   <url>
     <loc>http://suraj.io/</loc>
-    <lastmod>2017-03-15T14:16:43+05:30</lastmod>
+    <lastmod>2017-03-17T14:41:51+05:30</lastmod>
     <priority>0</priority>
   </url>
   
