@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:updated_time" content="2017-03-17T14:41:51&#43;05:30"/>
+<meta property="og:updated_time" content="2017-03-21T22:03:48&#43;05:30"/>
 
 
 
@@ -187,11 +187,11 @@
 
                 
                     <li>
-                        <a href="http://suraj.io/post/intellij-shortcuts/"><p>Intellij Shortcuts</p></a>
+                        <a href="http://suraj.io/post/git-notes/"><p>Git Notes</p></a>
                     </li>
                 
                     <li>
-                        <a href="http://suraj.io/post/packaging-kompose-for-centos-paas-sig/"><p>Packaging &#39;kompose&#39; for centos paas sig</p></a>
+                        <a href="http://suraj.io/post/intellij-shortcuts/"><p>Intellij Shortcuts</p></a>
                     </li>
                 
             </ul>
@@ -208,8 +208,10 @@
     <header>
     <div class="title">
         
-            <h2><a href="http://suraj.io/post/intellij-shortcuts/">Intellij Shortcuts</a></h2>
+            <h2><a href="http://suraj.io/post/git-notes/">Git Notes</a></h2>
         
+        
+            <p>Contains notes about using git</p>
         
     </div>
     <div class="meta">
@@ -218,11 +220,11 @@
         
 
         <time class="published"
-            datetime='2017-03-17'>
-            March 17, 2017</time>
+            datetime='2017-03-21'>
+            March 21, 2017</time>
         <span class="author">Suraj Deshmukh</span>
         
-            <p>5 minute read</p>
+            <p>4 minute read</p>
         
         
     </div>
@@ -234,43 +236,43 @@
             
 
 
-<li><a href="//twitter.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&text=Intellij%20Shortcuts&via=surajd_" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&text=Git%20Notes&via=surajd_" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//plus.google.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f" target="_blank" class="share-btn google-plus">
+<li><a href="//plus.google.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//reddit.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&title=Intellij%20Shortcuts" target="_blank" class="share-btn reddit">
+<li><a href="//reddit.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&title=Git%20Notes" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&title=Intellij%20Shortcuts" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&title=Git%20Notes" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&title=Intellij%20Shortcuts" target="_blank" class="share-btn stumbleupon">
+<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&title=Git%20Notes" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -282,286 +284,222 @@
     <div id="content">
         
 
-<p><strong>Note</strong>: This is a living document and will be updated as I discover new things.</p>
+<p>Notes about using <code>git</code>.</p>
 
-<h2 id="shortcuts">Shortcuts</h2>
-
-<ul>
-<li><code>Ctrl + Shift + A</code></li>
-</ul>
-
-<p>Find any action in IDE</p>
+<h2 id="tips-and-tricks">Tips and tricks</h2>
 
 <ul>
-<li><code>Ctrl + Shift + F</code></li>
+<li>Switch branches</li>
 </ul>
 
-<p>Find in Path</p>
+<pre><code class="language-bash">  $ git checkout &lt;branch&gt;
+</code></pre>
 
 <ul>
-<li><code>Alt + 1</code></li>
+<li><code>show</code></li>
 </ul>
 
-<p>Open project navigator.
-You can search here, just start typing here, after the project navigator window is opened.</p>
+<pre><code class="language-bash">  $ git show
+</code></pre>
+
+<p>Shows log message and diff about the commit you are on.</p>
 
 <ul>
-<li><code>Shift + Insert</code> in Project window</li>
+<li><code>blame</code></li>
 </ul>
 
-<p>Here you can add new file to the project. The filename could be the entire path, so the intermediate directories will be created for you.</p>
+<p>To see who wrote the code? For each line of the file what commit edited that line of code will be shown. So now you can use that git commit and pass it to <code>git show &lt;commit&gt;</code> to see all the changes.</p>
+
+<pre><code class="language-bash">  $ git blame path/to/file
+</code></pre>
 
 <ul>
-<li><code>Ctrl + N</code></li>
+<li><code>cherry-pick</code></li>
 </ul>
 
-<p>Find a struct or class definition by name.</p>
+<p>To move a commit from one branch to another branch. Situation where: <em>I committed to master when I meant to commit to my feature branch. I need to move my commit!</em></p>
+
+<p>Get the commit hash</p>
+
+<pre><code class="language-bash">  $ git show
+</code></pre>
+
+<p>Change to the branch you wanted to add that commit</p>
+
+<pre><code class="language-bash">  $ git checkout &lt;feature-branch&gt;
+</code></pre>
+
+<p>Add it to the branch you are on</p>
+
+<pre><code class="language-bash">  $ git cherry-pick &lt;commit hash&gt;
+</code></pre>
+
+<p><code>cherry-pick</code> creates an entirely new commit based off the original, and it does not delete the original commit. So you will have to delete it manually. See below how to do it.</p>
+
+<p>You can also get conflict during <code>cherry-pick</code></p>
+
+<pre><code class="language-bash">  $ git cherry-pick 435bedfa
+</code></pre>
+
+<p>Resolve the conflict and then</p>
+
+<pre><code class="language-bash">  $ git cherry-pick --continue
+</code></pre>
 
 <ul>
-<li><code>Ctrl + Shift + N</code></li>
+<li><code>reset</code></li>
 </ul>
 
-<p>Find a file by name.
-If you type file name and number seprated by number it will take you to the line in that file. e.g. <code>main.go:6</code> This will take you to line 6 in <code>main.go</code>.</p>
+<p>Remove the last commit.</p>
+
+<pre><code class="language-bash">  $ git reset --hard HEAD^
+</code></pre>
 
 <ul>
-<li><code>Ctrl + Shift + Alt + N</code></li>
-</ul>
+<li><code>HEAD</code>  : <em>the commit I&rsquo;m currently sitting on</em></li>
+<li><code>HEAD^</code> : <em>this commit&rsquo;s parent</em></li>
 
-<p>Find any symbol in the project. Here symbol means mainly type.</p>
+<li><p><code>HEAD^^</code>: <em>this commit&rsquo;s grandparent</em> and so on</p></li>
 
-<ul>
-<li><code>Shift + Shift</code></li>
-</ul>
-
-<p>Search anything anywhere.</p>
+<li><p><code>rebase</code></p>
 
 <ul>
-<li><code>Ctrl + F4</code></li>
+<li><code>rebase</code> is a command for changing history.</li>
+<li>Never change history when other people might be using your branch, unless they know you&rsquo;re doing so.</li>
+<li>Never change history on <code>master</code>.</li>
+<li>Best practice: only change history for commits that have not yet been pushed.</li>
+</ul></li>
 </ul>
 
-<p>Close section that is active.</p>
+<pre><code class="language-bash">  $ git checkout master
+  $ git pull --ff upstream master
+  $ git checkout &lt;feature-branch&gt;
+  $ git rebase master -i
+</code></pre>
+
+<p>While pushing need to do force push because there is change of history. Local branch and remote branch have diverged.</p>
+
+<pre><code class="language-bash">  $ git push origin &lt;feature-branch&gt; -f
+</code></pre>
+
+<p>In case of conflicts, find the conflicting file.</p>
+
+<pre><code class="language-bash">  $ git status
+</code></pre>
+
+<p>reolve those conflicts and then continue the rebase</p>
+
+<pre><code class="language-bash">  $ git status
+  $ git rebase --continue
+</code></pre>
 
 <ul>
-<li><code>Ctrl + Tab</code></li>
-</ul>
-
-<p>Switcher to switch between open items</p>
+<li><p>Squashing commits</p>
 
 <ul>
-<li><code>Ctrl + Shift + B</code></li>
+<li>Amending the commit</li>
+</ul></li>
 </ul>
 
-<p>Jump to definition.</p>
+<pre><code class="language-bash">  $ git add missing-file
+  $ git commit --amend
+</code></pre>
 
 <ul>
-<li><code>Ctrl + B</code></li>
+<li>Squashing</li>
 </ul>
 
-<p>Find usage of that element in project. Or find declaration of a variable.</p>
+<p>Look at last 5 commits. Below command will open the text editor.</p>
+
+<pre><code class="language-bash">  $ git rebase --interactive HEAD~5
+</code></pre>
+
+<p>Once in editor, you can select which ones to squash into previous one and ones to pick as it is. Now type new commit message to squashed commits.</p>
 
 <ul>
-<li><code>Ctrl + Shift + P</code></li>
+<li>Splitting commits</li>
 </ul>
 
-<p>Find type of a variable.</p>
+<pre><code class="language-bash">  $ git rebase --i HEAD~3
+</code></pre>
+
+<p>Now this will open the commit history in editor. The commit you want to split, change it from <code>pick</code> to <code>edit</code>. Save that file. Git will pause in the rebase process and give us time to create new commits.
+  The too-big commit is already present, so let&rsquo;s pop it off, but keep the changes:</p>
+
+<pre><code class="language-bash">  $ git reset HEAD^
+</code></pre>
+
+<p>Not using <code>--hard</code> because we want to have the changes we wanted. Make changes as needed. Now add individual file and commit. And continue rebase.</p>
+
+<pre><code class="language-bash">  $ git rebase --continue
+</code></pre>
 
 <ul>
-<li><code>Ctrl + cursor up/down</code></li>
+<li><code>bisect</code></li>
 </ul>
 
-<p>Navigate the code window up and down</p>
+<p><em>The feature&rsquo;s broken? But it was working fine 2 months ago&hellip; what changes?</em> Bisect will help you find the commit that introduced the problem.</p>
 
 <ul>
-<li><code>Ctrl + D</code></li>
+<li>Need commit where it was working, commit where it&rsquo;s broken and a test to verify that.</li>
 </ul>
 
-<p>Duplicate a line or selection.</p>
+<pre><code class="language-bash">  $ git bisect start
+  $ git checkout broken-commit
+  $ git bisect bad
+  $ git checkout working-commit
+  $ git bisect good
+</code></pre>
 
 <ul>
-<li><code>Ctrl + Y</code></li>
+<li>Git merge from someone else&rsquo;s fork</li>
 </ul>
 
-<p>Delete a line or selection.</p>
+<p>Add their github fork repo as a remote to a clone of your own repo:</p>
+
+<pre><code class="language-bash">  $ git remote add other-guys-repo &lt;url to other guys repo&gt;
+</code></pre>
+
+<p>Get their changes:</p>
+
+<pre><code class="language-bash">  $ git fetch other-guys-repo
+</code></pre>
+
+<p>Checkout the branch where you want to merge:</p>
+
+<pre><code class="language-bash">  $ git checkout my_new_branch
+</code></pre>
+
+<p>Merge their changes in (assuming they did their work on the master branch):</p>
+
+<pre><code class="language-bash">  $ git merge other-guys-repo/master
+</code></pre>
+
+<p>Resolve conflicts, commit the resolutions and voila.
+  Quick Ref: <a href="http://stackoverflow.com/a/5606062">http://stackoverflow.com/a/5606062</a></p>
 
 <ul>
-<li><code>Ctrl + /</code></li>
+<li>How to pull remote branch from somebody else&rsquo;s repo</li>
 </ul>
 
-<p>Comment/Uncomment out with line comment, a line or selected block.</p>
+<pre><code class="language-bash">  $ git remote add coworker git://path/to/coworkers/repo.git
+  $ git fetch coworker
+  $ git checkout --track coworker/foo
+</code></pre>
 
-<ul>
-<li><code>Ctrl + Shift + /</code></li>
-</ul>
+<p>This will setup a local branch foo, tracking the remote branch coworker/foo. So when your coworker has made some changes, you can easily pull them:</p>
 
-<p>Comment/Uncomment out with block comment, a line or selected block.</p>
+<pre><code class="language-bash">  $ git checkout foo
+  $ git pull
+</code></pre>
 
-<ul>
-<li><code>Alt + Shift + cursor up/down</code></li>
-</ul>
-
-<p>Move line or selection up/down.</p>
-
-<ul>
-<li><code>Alt + -&gt;</code> or <code>Alt + &lt;-</code></li>
-</ul>
-
-<p>Switch tabs of open files.</p>
-
-<ul>
-<li><code>Ctrl + E</code></li>
-</ul>
-
-<p>Show recently openend files.</p>
-
-<ul>
-<li><code>Ctrl + Shift + A</code> &lsquo;Scratch files&rsquo;</li>
-</ul>
-
-<p>If you need files that are not part of project but need to test something.</p>
-
-<ul>
-<li><code>Ctrl + Shift + F12</code></li>
-</ul>
-
-<p>Hide all the windows and make editor full screen and press again to go back to having all the windows.</p>
-
-<ul>
-<li><code>View + Enter Distraction Free mode</code></li>
-</ul>
-
-<p>This will only keep editor rest everything goes away.</p>
-
-<ul>
-<li><code>Ctrl + Shift + &lt;-</code> or <code>Ctrl + Shift + -&gt;</code></li>
-</ul>
-
-<p>When in the project navigation window you can resize it.</p>
-
-<ul>
-<li><code>Ctrl + W</code></li>
-</ul>
-
-<p>Select a word, press again and select a line, then select entire line then entire block, then entire outcasting block and so on.</p>
-
-<ul>
-<li><code>Shift + Alt + up/down cursor</code></li>
-</ul>
-
-<p>When a line or block of code is selected and wanna move up and down.</p>
-
-<ul>
-<li><code>Ctrl + Shift + V</code></li>
-</ul>
-
-<p>To see your clipboard history</p>
-
-<ul>
-<li><code>Alt + mouse click in location</code></li>
-</ul>
-
-<p>To have multiple cursors. To get out of this mode just press <code>escape</code> key.</p>
-
-<ul>
-<li><code>Alt + J</code></li>
-</ul>
-
-<p>When pressed on a word, it finds the next occurrence of the word and puts a cursor there. So I can edit mutiple occurrences of same word simultaneously.</p>
-
-<ul>
-<li><code>Ctrl + Alt + I</code></li>
-</ul>
-
-<p>Select a block of code and get indentation right.</p>
-
-<ul>
-<li><code>Ctrl + Alt + L</code></li>
-</ul>
-
-<p>Reformat the code.</p>
-
-<ul>
-<li><code>Alt + Enter</code></li>
-</ul>
-
-<p>Goto a string and press this key and then you can do language injection. So you can tell intellij to interpret that string as <code>json</code> or something like that.
-So this helps in adding markup languages as string as a part of code. Also you can inject <code>regular expression</code> and then check if the string is validated
-against the regular expressions you put in.</p>
-
-<ul>
-<li><code>Alt + /</code></li>
-</ul>
-
-<p>So when a recommendation is opened up and if you press above key combination, the word is completed but if you keep pressing those keys the recommendation
-rotates through all the recommendation.</p>
-
-<ul>
-<li><code>Ctrl + J</code></li>
-</ul>
-
-<p>Recommend templates, if there are any pre-defined.</p>
-
-<ul>
-<li><code>Ctrl + Shift + Enter</code></li>
-</ul>
-
-<p>Auto complete the current statement.</p>
-
-<ul>
-<li><code>Ctrl + F12</code></li>
-</ul>
-
-<p>Navigate file structure, you can start typing and search for things. And then by pressing the enter key you can jump to the definition.</p>
-
-<ul>
-<li><code>Alt + 7</code></li>
-</ul>
-
-<p>Similar functionality as above only difference is that it opens in a side bar.</p>
-
-<ul>
-<li><code>Ctrl + Shift + A</code> &lsquo;annotate&rsquo;</li>
-</ul>
-
-<p>Start annotation to see who made changes on each line. From here you can copy the revision number and then search it in the &lsquo;version control&rsquo; window.</p>
-
-<ul>
-<li><code>Alt + F12</code></li>
-</ul>
-
-<p>Terminal in IDE</p>
-
-<ul>
-<li><code>Alt + 9</code></li>
-</ul>
-
-<p>Version Control window</p>
-
-<h2 id="notes-and-tips">Notes and Tips</h2>
-
-<ul>
-<li>In code you can write TODOs and FIXME and then IDE can identify them and you can write code later on in there.</li>
-<li>There is a plugin called as &lsquo;Presentation Assistant&rsquo; which shows what keys did you type</li>
-<li>In the project window(side bar), select <em>Auto Scroll from Source</em> so when you are moving from one file to another it shows in the project side bar where that file is right now.</li>
-<li>When navigating in the project side bar, to start editing certain file press function key <code>F4</code>. Press <code>Enter</code> to just view it.</li>
-</ul>
-
-<h2 id="other-receipes">Other receipes</h2>
-
-<h4 id="compare-branches">Compare branches</h4>
-
-<ul>
-<li>Press <code>Ctrl + Shift + A</code> to open the action window, search for <code>branches</code>, open branches window. Also can be done <a href="https://www.jetbrains.com/help/pycharm/2016.1/accessing-git-branches-popup-menu.html">as</a>.</li>
-<li>Once branch pop-window is open, select with what branch you wanna compare current checked out branch and select <code>compare</code>.</li>
-<li>It will open up a window with all changes, in top tabs select <code>diff</code>, then select a file you wanna compare.</li>
-<li>Above steps are also given <a href="https://www.jetbrains.com/help/pycharm/2016.1/merging-deleting-and-comparing-branches.html">here</a>.</li>
-</ul>
+<p>Quick Ref: <a href="http://stackoverflow.com/a/5884825">http://stackoverflow.com/a/5884825</a></p>
 
 <h2 id="ref">Ref:</h2>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=vsyT-7n5-1I">IntelliJ IDEA Tutorial - Shortcuts to Ditch Your Mouse Today</a></li>
-<li><a href="https://youtu.be/eq3KiAH4IBI">42 IntelliJ IDEA Tips and Tricks</a></li>
+<li><a href="https://dont-be-afraid-to-commit.readthedocs.io/en/latest/">Don&rsquo;t be afraid to commit</a></li>
+<li>Advanced Git - David Baumgold - <a href="https://www.youtube.com/watch?v=4EOZvow1mk4">video</a>, <a href="https://speakerdeck.com/singingwolfboy/advanced-git">slides</a></li>
 </ul>
 
     </div>
@@ -592,7 +530,7 @@ rotates through all the recommendation.</p>
 
     
     
-        <li><a href='/categorieside'>ide</a></li>
+        <li><a href='/categoriesgit'>git</a></li>
     
 </ul>
 
@@ -600,8 +538,8 @@ rotates through all the recommendation.</p>
 </article>
 <ul class="actions pagination">
     
-        <li><a href="http://suraj.io/post/packaging-kompose-for-centos-paas-sig/"
-                class="button big previous">Packaging &#39;kompose&#39; for centos paas sig</a></li>
+        <li><a href="http://suraj.io/post/intellij-shortcuts/"
+                class="button big previous">Intellij Shortcuts</a></li>
     
 
     
@@ -614,9 +552,9 @@ rotates through all the recommendation.</p>
             <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'suraj-io';
-    var disqus_identifier = 'http:\/\/suraj.io\/post\/intellij-shortcuts\/';
-    var disqus_title = 'Intellij Shortcuts';
-    var disqus_url = 'http:\/\/suraj.io\/post\/intellij-shortcuts\/';
+    var disqus_identifier = 'http:\/\/suraj.io\/post\/git-notes\/';
+    var disqus_title = 'Git Notes';
+    var disqus_url = 'http:\/\/suraj.io\/post\/git-notes\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -640,43 +578,43 @@ rotates through all the recommendation.</p>
             
 
 
-<li><a href="//twitter.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&text=Intellij%20Shortcuts&via=surajd_" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&text=Git%20Notes&via=surajd_" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//plus.google.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f" target="_blank" class="share-btn google-plus">
+<li><a href="//plus.google.com/share?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//reddit.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&title=Intellij%20Shortcuts" target="_blank" class="share-btn reddit">
+<li><a href="//reddit.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&title=Git%20Notes" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&title=Intellij%20Shortcuts" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&title=Git%20Notes" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f&title=Intellij%20Shortcuts" target="_blank" class="share-btn stumbleupon">
+<li><a href="//www.stumbleupon.com/submit?url=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f&title=Git%20Notes" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=http%3a%2f%2fsuraj.io%2fpost%2fintellij-shortcuts%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=http%3a%2f%2fsuraj.io%2fpost%2fgit-notes%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -792,13 +730,13 @@ rotates through all the recommendation.</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="http://suraj.io/post/intellij-shortcuts/">Intellij Shortcuts</a></h3>
+                                <h3><a href="http://suraj.io/post/git-notes/">Git Notes</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-17'>
-                                    March 17, 2017</time>
+                                    '2017-03-21'>
+                                    March 21, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -806,13 +744,13 @@ rotates through all the recommendation.</p>
                     <li>
                         <article>
                             <header>
-                                <h3><a href="http://suraj.io/post/packaging-kompose-for-centos-paas-sig/">Packaging &#39;kompose&#39; for centos paas sig</a></h3>
+                                <h3><a href="http://suraj.io/post/intellij-shortcuts/">Intellij Shortcuts</a></h3>
                                 
                                     
                                 
                                 <time class="published" datetime=
-                                    '2017-03-15'>
-                                    March 15, 2017</time>
+                                    '2017-03-17'>
+                                    March 17, 2017</time>
                             </header>
                         </article>
                     </li>
@@ -852,6 +790,15 @@ rotates through all the recommendation.</p>
                             <header>
                                 <a href="/categories/packaging/">packaging</a>
                                 <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/git/">git</a>
+                                <span style="float:right;">1</span>
                             </header>
                         </article>
                     </li>
