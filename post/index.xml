@@ -21,34 +21,34 @@
 
 &lt;h2 id=&#34;tips-and-tricks&#34;&gt;Tips and tricks&lt;/h2&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Switch branches&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;switch-branches&#34;&gt;Switch branches&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git checkout &amp;lt;branch&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;show&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;show&#34;&gt;show&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git show
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Shows log message and diff about the commit you are on.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;blame&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;blame&#34;&gt;blame&lt;/h3&gt;
 
 &lt;p&gt;To see who wrote the code? For each line of the file what commit edited that line of code will be shown. So now you can use that git commit and pass it to &lt;code&gt;git show &amp;lt;commit&amp;gt;&lt;/code&gt; to see all the changes.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git blame path/to/file
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;cherry-pick&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;cherry-pick&#34;&gt;cherry-pick&lt;/h3&gt;
 
 &lt;p&gt;To move a commit from one branch to another branch. Situation where: &lt;em&gt;I committed to master when I meant to commit to my feature branch. I need to move my commit!&lt;/em&gt;&lt;/p&gt;
 
@@ -79,29 +79,30 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git cherry-pick --continue
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;reset&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;reset&#34;&gt;reset&lt;/h3&gt;
 
 &lt;p&gt;Remove the last commit.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git reset --hard HEAD^
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;HEAD&lt;/code&gt;  : &lt;em&gt;the commit I&amp;rsquo;m currently sitting on&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;HEAD^&lt;/code&gt; : &lt;em&gt;this commit&amp;rsquo;s parent&lt;/em&gt;&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;HEAD&lt;/code&gt;  : &lt;em&gt;the commit I&amp;rsquo;m currently sitting on&lt;/em&gt;&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;code&gt;HEAD^^&lt;/code&gt;: &lt;em&gt;this commit&amp;rsquo;s grandparent&lt;/em&gt; and so on&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;HEAD^&lt;/code&gt; : &lt;em&gt;this commit&amp;rsquo;s parent&lt;/em&gt;&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;&lt;code&gt;rebase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;HEAD^^&lt;/code&gt;: &lt;em&gt;this commit&amp;rsquo;s grandparent&lt;/em&gt; and so on&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;rebase&#34;&gt;rebase&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;rebase&lt;/code&gt; is a command for changing history.&lt;/li&gt;
 &lt;li&gt;Never change history when other people might be using your branch, unless they know you&amp;rsquo;re doing so.&lt;/li&gt;
 &lt;li&gt;Never change history on &lt;code&gt;master&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Best practice: only change history for commits that have not yet been pushed.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git checkout master
@@ -126,12 +127,12 @@
   $ git rebase --continue
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Squashing commits&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;squashing-commits&#34;&gt;Squashing commits&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Amending the commit&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git add missing-file
@@ -149,9 +150,9 @@
 
 &lt;p&gt;Once in editor, you can select which ones to squash into previous one and ones to pick as it is. Now type new commit message to squashed commits.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Splitting commits&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;splitting-commits&#34;&gt;Splitting commits&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git rebase --i HEAD~3
 &lt;/code&gt;&lt;/pre&gt;
@@ -167,9 +168,9 @@
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git rebase --continue
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;bisect&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;bisect&#34;&gt;bisect&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;The feature&amp;rsquo;s broken? But it was working fine 2 months ago&amp;hellip; what changes?&lt;/em&gt; Bisect will help you find the commit that introduced the problem.&lt;/p&gt;
 
@@ -184,9 +185,9 @@
   $ git bisect good
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Git merge from someone else&amp;rsquo;s fork&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;git-merge-from-someone-else-s-fork&#34;&gt;Git merge from someone else&amp;rsquo;s fork&lt;/h3&gt;
 
 &lt;p&gt;Add their github fork repo as a remote to a clone of your own repo:&lt;/p&gt;
 
@@ -211,9 +212,9 @@
 &lt;p&gt;Resolve conflicts, commit the resolutions and voila.
   Quick Ref: &lt;a href=&#34;http://stackoverflow.com/a/5606062&#34;&gt;http://stackoverflow.com/a/5606062&lt;/a&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;How to pull remote branch from somebody else&amp;rsquo;s repo&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;how-to-pull-remote-branch-from-somebody-else-s-repo&#34;&gt;How to pull remote branch from somebody else&amp;rsquo;s repo&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;  $ git remote add coworker git://path/to/coworkers/repo.git
   $ git fetch coworker
@@ -227,6 +228,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Quick Ref: &lt;a href=&#34;http://stackoverflow.com/a/5884825&#34;&gt;http://stackoverflow.com/a/5884825&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&#34;ref&#34;&gt;Ref:&lt;/h2&gt;
 

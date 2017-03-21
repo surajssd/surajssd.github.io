@@ -288,34 +288,34 @@
 
 <h2 id="tips-and-tricks">Tips and tricks</h2>
 
-<ul>
-<li>Switch branches</li>
-</ul>
+<hr />
+
+<h3 id="switch-branches">Switch branches</h3>
 
 <pre><code class="language-bash">  $ git checkout &lt;branch&gt;
 </code></pre>
 
-<ul>
-<li><code>show</code></li>
-</ul>
+<hr />
+
+<h3 id="show">show</h3>
 
 <pre><code class="language-bash">  $ git show
 </code></pre>
 
 <p>Shows log message and diff about the commit you are on.</p>
 
-<ul>
-<li><code>blame</code></li>
-</ul>
+<hr />
+
+<h3 id="blame">blame</h3>
 
 <p>To see who wrote the code? For each line of the file what commit edited that line of code will be shown. So now you can use that git commit and pass it to <code>git show &lt;commit&gt;</code> to see all the changes.</p>
 
 <pre><code class="language-bash">  $ git blame path/to/file
 </code></pre>
 
-<ul>
-<li><code>cherry-pick</code></li>
-</ul>
+<hr />
+
+<h3 id="cherry-pick">cherry-pick</h3>
 
 <p>To move a commit from one branch to another branch. Situation where: <em>I committed to master when I meant to commit to my feature branch. I need to move my commit!</em></p>
 
@@ -346,29 +346,30 @@
 <pre><code class="language-bash">  $ git cherry-pick --continue
 </code></pre>
 
-<ul>
-<li><code>reset</code></li>
-</ul>
+<hr />
+
+<h3 id="reset">reset</h3>
 
 <p>Remove the last commit.</p>
 
 <pre><code class="language-bash">  $ git reset --hard HEAD^
 </code></pre>
 
-<ul>
-<li><code>HEAD</code>  : <em>the commit I&rsquo;m currently sitting on</em></li>
-<li><code>HEAD^</code> : <em>this commit&rsquo;s parent</em></li>
+<p><code>HEAD</code>  : <em>the commit I&rsquo;m currently sitting on</em></p>
 
-<li><p><code>HEAD^^</code>: <em>this commit&rsquo;s grandparent</em> and so on</p></li>
+<p><code>HEAD^</code> : <em>this commit&rsquo;s parent</em></p>
 
-<li><p><code>rebase</code></p>
+<p><code>HEAD^^</code>: <em>this commit&rsquo;s grandparent</em> and so on</p>
+
+<hr />
+
+<h3 id="rebase">rebase</h3>
 
 <ul>
 <li><code>rebase</code> is a command for changing history.</li>
 <li>Never change history when other people might be using your branch, unless they know you&rsquo;re doing so.</li>
 <li>Never change history on <code>master</code>.</li>
 <li>Best practice: only change history for commits that have not yet been pushed.</li>
-</ul></li>
 </ul>
 
 <pre><code class="language-bash">  $ git checkout master
@@ -393,12 +394,12 @@
   $ git rebase --continue
 </code></pre>
 
-<ul>
-<li><p>Squashing commits</p>
+<hr />
+
+<h3 id="squashing-commits">Squashing commits</h3>
 
 <ul>
 <li>Amending the commit</li>
-</ul></li>
 </ul>
 
 <pre><code class="language-bash">  $ git add missing-file
@@ -416,9 +417,9 @@
 
 <p>Once in editor, you can select which ones to squash into previous one and ones to pick as it is. Now type new commit message to squashed commits.</p>
 
-<ul>
-<li>Splitting commits</li>
-</ul>
+<hr />
+
+<h3 id="splitting-commits">Splitting commits</h3>
 
 <pre><code class="language-bash">  $ git rebase --i HEAD~3
 </code></pre>
@@ -434,9 +435,9 @@
 <pre><code class="language-bash">  $ git rebase --continue
 </code></pre>
 
-<ul>
-<li><code>bisect</code></li>
-</ul>
+<hr />
+
+<h3 id="bisect">bisect</h3>
 
 <p><em>The feature&rsquo;s broken? But it was working fine 2 months ago&hellip; what changes?</em> Bisect will help you find the commit that introduced the problem.</p>
 
@@ -451,9 +452,9 @@
   $ git bisect good
 </code></pre>
 
-<ul>
-<li>Git merge from someone else&rsquo;s fork</li>
-</ul>
+<hr />
+
+<h3 id="git-merge-from-someone-else-s-fork">Git merge from someone else&rsquo;s fork</h3>
 
 <p>Add their github fork repo as a remote to a clone of your own repo:</p>
 
@@ -478,9 +479,9 @@
 <p>Resolve conflicts, commit the resolutions and voila.
   Quick Ref: <a href="http://stackoverflow.com/a/5606062">http://stackoverflow.com/a/5606062</a></p>
 
-<ul>
-<li>How to pull remote branch from somebody else&rsquo;s repo</li>
-</ul>
+<hr />
+
+<h3 id="how-to-pull-remote-branch-from-somebody-else-s-repo">How to pull remote branch from somebody else&rsquo;s repo</h3>
 
 <pre><code class="language-bash">  $ git remote add coworker git://path/to/coworkers/repo.git
   $ git fetch coworker
@@ -494,6 +495,8 @@
 </code></pre>
 
 <p>Quick Ref: <a href="http://stackoverflow.com/a/5884825">http://stackoverflow.com/a/5884825</a></p>
+
+<hr />
 
 <h2 id="ref">Ref:</h2>
 
