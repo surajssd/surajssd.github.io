@@ -16,6 +16,8 @@
       <guid>http://suraj.io/post/using-crio-with-k8s-single-node/</guid>
       <description>
 
+&lt;p&gt;Here is a single node Kubernetes on CRI-O. This setup is done on Fedora 25.&lt;/p&gt;
+
 &lt;h3 id=&#34;installing-os-dependencies&#34;&gt;Installing OS dependencies&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;dnf -y install \
@@ -147,7 +149,11 @@ CONTAINER_RUNTIME=remote CONTAINER_RUNTIME_ENDPOINT=&#39;/var/run/ocid.sock --ru
 
 &lt;ul&gt;
 &lt;li&gt;Bangalore Kubernetes Meetup - April 2017 - &lt;a href=&#34;https://docs.google.com/presentation/d/1tP7b1e1fy-n3_v5bilDLjOAheZGu602B3WK-1kxXkVo/edit?usp=sharing&#34;&gt;Slides&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;runcom&amp;rsquo;s &lt;a href=&#34;https://gist.github.com/runcom/ba58bf2f64e38d9f5d376d587751a0f9#file-fedora_25&#34;&gt;Setup script&lt;/a&gt; for Fedora.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/runc0m&#34;&gt;runcom&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;https://gist.github.com/runcom/ba58bf2f64e38d9f5d376d587751a0f9#file-fedora_25&#34;&gt;Setup script&lt;/a&gt; for Fedora.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kubernetes-incubator/cri-o&#34;&gt;cri-o project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cri-o &lt;a href=&#34;https://github.com/kubernetes-incubator/cri-o/blob/master/tutorial.md&#34;&gt;tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kubernetes-incubator/cri-o/blob/master/kubernetes.md&#34;&gt;Running cri-o on kubernetes cluster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CRI-O: A kubernetes runtime - &lt;a href=&#34;https://www.youtube.com/watch?v=R-p7BXhtodo&#34;&gt;video&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
