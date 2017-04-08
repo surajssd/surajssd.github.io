@@ -30,7 +30,7 @@
 
 &lt;p&gt;Finally a lightening talk which turned into discussion of 30mins, was about &lt;em&gt;Persistent Storage with Kubernetes&lt;/em&gt; by &lt;a href=&#34;https://twitter.com/raghavendra_t&#34;&gt;Raghavendra Talur&lt;/a&gt;. He demoed the gluster feature of doing hyper-converged storage and dynamic provisioning with gluster. He got lot of questions about setting up storage with Kubernetes.&lt;/p&gt;
 
-&lt;p&gt;The meetup ended with discussion over snacks. Next meetup was also planned which is gonna be a Kubernetes and OpenShift 101 workshop.
+&lt;p&gt;The meetup ended with discussion over snacks. Next meetup was also planned which is gonna be a Kubernetes and OpenShift 101 workshop. This meetup was also featured on &lt;a href=&#34;http://www.k8sport.org/&#34;&gt;K8sPort&lt;/a&gt; which is community engagement platform for Kubernetes community. This was done with help of &lt;a href=&#34;https://twitter.com/RSQuackenbush&#34;&gt;Ryan Quackenbush&lt;/a&gt;.
 &lt;img src=&#34;http://suraj.io/images/blr-k8s-meetup-april-2017/network.jpg&#34; alt=&#34;Folks networking&#34; title=&#34;Folks networking&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Thanks to Speakers for presenting, &lt;a href=&#34;https://twitter.com/nogenerics&#34;&gt;Baiju&lt;/a&gt; for recording all the sessions, &lt;a href=&#34;https://twitter.com/redhatopen&#34;&gt;Red Hat&lt;/a&gt; for the venue.&lt;/p&gt;

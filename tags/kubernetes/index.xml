@@ -9,35 +9,6 @@
     <atom:link href="http://suraj.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Bangalore Kubernetes Meetup April 2017</title>
-      <link>http://suraj.io/post/blr-k8s-meetup-april-2017/</link>
-      <pubDate>Sat, 08 Apr 2017 14:31:33 +0530</pubDate>
-      
-      <guid>http://suraj.io/post/blr-k8s-meetup-april-2017/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.meetup.com/kubernetes-openshift-India-Meetup/events/238335903/&#34;&gt;Bangalore Kubernetes Meetup&lt;/a&gt; was held in &lt;a href=&#34;https://www.google.co.in/search?q=red+hat+bangalore&amp;amp;oq=red+hat+bangalore&amp;amp;aqs=chrome..69i57j69i61l3j69i64j69i59.4420j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8#q=red+hat+bangalore&amp;amp;rflfq=1&amp;amp;rlha=0&amp;amp;rllag=12949018,77600064,1885&amp;amp;tbm=lcl&amp;amp;tbs=lf_pqs:EAE,lf:1,lf_ui:3&amp;amp;rldoc=1&amp;amp;rlfi=hd:;si:1155840882052252649;mv:!1m3!1d30742.31942082362!2d77.60006399999997!3d12.949018050000019!3m2!1i1312!2i759!4f13.1;tbs:lf_pqs:EAE,lf:1,lf_ui:3&#34;&gt;Red Hat Bangalore&lt;/a&gt; office on April 8th.&lt;/p&gt;
-
-&lt;p&gt;The meetup started with talk from &lt;a href=&#34;https://twitter.com/surajd_&#34;&gt;Suraj Deshmukh&lt;/a&gt; about &lt;em&gt;Kubernetes on CRI-O&lt;/em&gt;. Where he explained about the jargons like OCI), CRI, etc. What is CRI-O? How is the architecture of CRI-O? How it is solving certain problem. And then he demoed the use of cri-o with kubernetes. Link to &lt;a href=&#34;https://docs.google.com/presentation/d/1tP7b1e1fy-n3_v5bilDLjOAheZGu602B3WK-1kxXkVo/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;.
-&lt;img src=&#34;http://suraj.io/images/blr-k8s-meetup-april-2017/group.jpg&#34; alt=&#34;Folks listening&#34; title=&#34;Folks listening&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Then was talk from &lt;a href=&#34;https://twitter.com/dipakpawar231&#34;&gt;Dipak Pawar&lt;/a&gt; about &lt;em&gt;System and integration testing for k8s/Openshift with arquillian-cube and JBoss Forge&lt;/em&gt;. He explained how arquillian-cube can be used with Kubernetes and OpenShift for doing tests of your micro-services deployed on OpenShift/K8s.
-&lt;img src=&#34;http://suraj.io/images/blr-k8s-meetup-april-2017/dipak.jpg&#34; alt=&#34;Dipak Pawar&#34; title=&#34;Dipak Pawar demoing arquillian-cube&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After a tea break next talk was by &lt;a href=&#34;https://twitter.com/budhrg&#34;&gt;Budhram Gurung&lt;/a&gt; on &lt;em&gt;Running OpenShift locally using Minishift&lt;/em&gt;. Where he explained what all components is Minishift made of. He then demoed the usage of Minishift.
-&lt;img src=&#34;http://suraj.io/images/blr-k8s-meetup-april-2017/budhram.jpg&#34; alt=&#34;Budhram Gurung&#34; title=&#34;Budhram demoing Minishift&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Last planned talk was by &lt;a href=&#34;https://twitter.com/red_suraj&#34;&gt;Suraj Narwade&lt;/a&gt; on running &lt;em&gt;Docker on ARM/Raspberry PI&lt;/em&gt;. He discussed all the problems he faced when trying to get containers run on Raspberry PI. Also his discovery that the container images built on &lt;code&gt;x86_64&lt;/code&gt; won&amp;rsquo;t run on &lt;code&gt;arm&lt;/code&gt;, etc. Link to &lt;a href=&#34;https://docs.google.com/presentation/d/1cJeQyMG_NOn8QDJpIHkAjTT4I0L6AyQ8DxeGbVWn850/edit?usp=sharing&#34;&gt;slides&lt;/a&gt;.
-&lt;img src=&#34;http://suraj.io/images/blr-k8s-meetup-april-2017/surajn.jpg&#34; alt=&#34;Suraj Narwade&#34; title=&#34;Suraj Narwade demoing about the Docker&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Finally a lightening talk which turned into discussion of 30mins, was about &lt;em&gt;Persistent Storage with Kubernetes&lt;/em&gt; by &lt;a href=&#34;https://twitter.com/raghavendra_t&#34;&gt;Raghavendra Talur&lt;/a&gt;. He demoed the gluster feature of doing hyper-converged storage and dynamic provisioning with gluster. He got lot of questions about setting up storage with Kubernetes.&lt;/p&gt;
-
-&lt;p&gt;The meetup ended with discussion over snacks. Next meetup was also planned which is gonna be a Kubernetes and OpenShift 101 workshop.
-&lt;img src=&#34;http://suraj.io/images/blr-k8s-meetup-april-2017/network.jpg&#34; alt=&#34;Folks networking&#34; title=&#34;Folks networking&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Thanks to Speakers for presenting, &lt;a href=&#34;https://twitter.com/nogenerics&#34;&gt;Baiju&lt;/a&gt; for recording all the sessions, &lt;a href=&#34;https://twitter.com/redhatopen&#34;&gt;Red Hat&lt;/a&gt; for the venue.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>k8s on CRI-O - single node</title>
       <link>http://suraj.io/post/using-crio-with-k8s-single-node/</link>
       <pubDate>Sat, 08 Apr 2017 00:11:37 +0530</pubDate>
