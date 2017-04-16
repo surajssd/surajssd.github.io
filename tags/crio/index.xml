@@ -130,14 +130,15 @@ EOF
 
 &lt;h3 id=&#34;make-selinux-happy&#34;&gt;Make SELinux happy&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chcon -Rt svirt_sandbox_file_t /var/lib/containers/
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p /var/lib/containers/
+chcon -Rt svirt_sandbox_file_t /var/lib/containers/
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;start-ocid-service&#34;&gt;Start ocid service&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export PATH=$PATH:/usr/local/bin/
 echo &#39;PATH=$PATH:/usr/local/bin/&#39; &amp;gt;&amp;gt; ~/.bashrc
-ocid --runtime /usr/local/sbin/runc --log /root/ocid.log --debug
+ocid --runtime /usr/local/sbin/runc --log /root/ocid.log --debug --selinux true
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;start-k8s-cluster-with-crio&#34;&gt;Start k8s cluster with crio&lt;/h3&gt;

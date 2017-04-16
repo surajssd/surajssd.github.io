@@ -58,7 +58,7 @@
 
 
 <meta itemprop="dateModified" content="2017-04-08T00:11:37&#43;05:30" />
-<meta itemprop="wordCount" content="284">
+<meta itemprop="wordCount" content="289">
 
 
 
@@ -483,14 +483,15 @@ EOF
 
 <h3 id="make-selinux-happy">Make SELinux happy</h3>
 
-<pre><code class="language-bash">chcon -Rt svirt_sandbox_file_t /var/lib/containers/
+<pre><code class="language-bash">mkdir -p /var/lib/containers/
+chcon -Rt svirt_sandbox_file_t /var/lib/containers/
 </code></pre>
 
 <h3 id="start-ocid-service">Start ocid service</h3>
 
 <pre><code class="language-bash">export PATH=$PATH:/usr/local/bin/
 echo 'PATH=$PATH:/usr/local/bin/' &gt;&gt; ~/.bashrc
-ocid --runtime /usr/local/sbin/runc --log /root/ocid.log --debug
+ocid --runtime /usr/local/sbin/runc --log /root/ocid.log --debug --selinux true
 </code></pre>
 
 <h3 id="start-k8s-cluster-with-crio">Start k8s cluster with crio</h3>
