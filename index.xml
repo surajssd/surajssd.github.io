@@ -202,9 +202,15 @@ cat &amp;gt; /etc/containers/policy.json &amp;lt;&amp;lt;EOF
 EOF
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h3 id=&#34;make-selinux-happy&#34;&gt;Make SELinux happy&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;chcon -Rt svirt_sandbox_file_t /var/lib/containers/
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h3 id=&#34;start-ocid-service&#34;&gt;Start ocid service&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;export PATH=$PATH:/usr/local/bin/
+echo &#39;PATH=$PATH:/usr/local/bin/&#39; &amp;gt;&amp;gt; ~/.bashrc
 ocid --runtime /usr/local/sbin/runc --log /root/ocid.log --debug
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -217,6 +223,7 @@ CONTAINER_RUNTIME=remote CONTAINER_RUNTIME_ENDPOINT=&#39;/var/run/ocid.sock --ru
 &lt;p&gt;To use &lt;code&gt;kubectl&lt;/code&gt; (in new terminal)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;alias kubectl=$GOPATH/src/k8s.io/kubernetes/cluster/kubectl.sh
+echo &#39;alias kubectl=$GOPATH/src/k8s.io/kubernetes/cluster/kubectl.sh&#39;  &amp;gt;&amp;gt; ~/.bashrc
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Ref:&lt;/p&gt;

@@ -58,7 +58,7 @@
 
 
 <meta itemprop="dateModified" content="2017-04-08T00:11:37&#43;05:30" />
-<meta itemprop="wordCount" content="268">
+<meta itemprop="wordCount" content="284">
 
 
 
@@ -481,9 +481,15 @@ cat &gt; /etc/containers/policy.json &lt;&lt;EOF
 EOF
 </code></pre>
 
+<h3 id="make-selinux-happy">Make SELinux happy</h3>
+
+<pre><code class="language-bash">chcon -Rt svirt_sandbox_file_t /var/lib/containers/
+</code></pre>
+
 <h3 id="start-ocid-service">Start ocid service</h3>
 
 <pre><code class="language-bash">export PATH=$PATH:/usr/local/bin/
+echo 'PATH=$PATH:/usr/local/bin/' &gt;&gt; ~/.bashrc
 ocid --runtime /usr/local/sbin/runc --log /root/ocid.log --debug
 </code></pre>
 
@@ -496,6 +502,7 @@ CONTAINER_RUNTIME=remote CONTAINER_RUNTIME_ENDPOINT='/var/run/ocid.sock --runtim
 <p>To use <code>kubectl</code> (in new terminal)</p>
 
 <pre><code class="language-bash">alias kubectl=$GOPATH/src/k8s.io/kubernetes/cluster/kubectl.sh
+echo 'alias kubectl=$GOPATH/src/k8s.io/kubernetes/cluster/kubectl.sh'  &gt;&gt; ~/.bashrc
 </code></pre>
 
 <p>Ref:</p>
