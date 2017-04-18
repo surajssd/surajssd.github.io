@@ -6,8 +6,69 @@
     <description>Recent content on Suraj Deshmukh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Apr 2017 14:31:33 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 18 Apr 2017 23:56:15 +0530</lastBuildDate>
     <atom:link href="http://suraj.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Quick PV for local Kubernetes cluster</title>
+      <link>http://suraj.io/post/quick-pv-for-local-k8s/</link>
+      <pubDate>Tue, 18 Apr 2017 23:56:15 +0530</pubDate>
+      
+      <guid>http://suraj.io/post/quick-pv-for-local-k8s/</guid>
+      <description>
+
+&lt;p&gt;I do lot of &lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt; related work either on &lt;a href=&#34;https://kubernetes.io/docs/getting-started-guides/minikube/&#34;&gt;minikube&lt;/a&gt; or local &lt;a href=&#34;https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md#overview&#34;&gt;OpenShift cluster&lt;/a&gt; setup in a VM. Often I need to create a &lt;code&gt;PersistentVolumeClaim&lt;/code&gt; a.k.a. &lt;code&gt;pvc&lt;/code&gt;. But to use &lt;code&gt;pvc&lt;/code&gt; you have to have a &lt;code&gt;PersistentVolume&lt;/code&gt; or &lt;code&gt;pv&lt;/code&gt; defined.&lt;/p&gt;
+
+&lt;h3 id=&#34;enter-into-the-machine-running-k8s&#34;&gt;Enter into the machine running k8s&lt;/h3&gt;
+
+&lt;p&gt;If using minikube you can do&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;minikube ssh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;create-a-local-directory-for-storage&#34;&gt;Create a local directory for storage&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir /tmp/pv0001
+chmod 777 /tmp/pv0001
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are on a machine that has &lt;code&gt;SELinux&lt;/code&gt; enabled do the following&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo chcon -R -t svirt_sandbox_file_t /tmp/pv0001
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;creating-pv&#34;&gt;Creating &lt;code&gt;pv&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Create file with following content&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat pv.yaml
+apiVersion: &amp;quot;v1&amp;quot;
+kind: &amp;quot;PersistentVolume&amp;quot;
+metadata:
+  name: &amp;quot;pv0001&amp;quot;
+spec:
+  capacity:
+    storage: &amp;quot;5Gi&amp;quot;
+  accessModes:
+    - &amp;quot;ReadWriteOnce&amp;quot;
+  persistentVolumeReclaimPolicy: Recycle
+  hostPath:
+    path: /tmp/pv0001
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Get to the terminal from where you can run &lt;code&gt;kubectl&lt;/code&gt; commands.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;kubectl create -f pv.yaml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you are doing it for OpenShift cluster then run following command with privileged access.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;oc create -f pv.yaml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There you have a &lt;code&gt;pv&lt;/code&gt; now you can create &lt;code&gt;pvc&lt;/code&gt;&amp;rsquo;s to use it.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Bangalore Kubernetes Meetup April 2017</title>
@@ -829,6 +890,15 @@ $ fedora-review -n namaskar
 
 &lt;p&gt;In the top bar there are buttons for global list of issues and PRs. This can be a good todo list. In issues you can see issues you have created or assigned or mentioned.&lt;/p&gt;
 
+&lt;ul&gt;
+&lt;li&gt;Writing a very huge comment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;details&amp;gt;
+    write whatever here that needs to be hidden
+  &amp;lt;/details&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;hr /&gt;
 
 &lt;h2 id=&#34;ref&#34;&gt;Ref:&lt;/h2&gt;
@@ -840,6 +910,7 @@ $ fedora-review -n namaskar
 &lt;li&gt;Tips &amp;amp; Tricks: Gotta Git Them All - GitHub Universe 2016, &lt;a href=&#34;https://youtu.be/LsxDxL4PYik&#34;&gt;video&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Everything I Wish I Knew When I Started Using GitHub - oscon Portland 2015, &lt;a href=&#34;https://youtu.be/KDUtjZHIx44&#34;&gt;video&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/a/2125738/3848679&#34;&gt;How to revert a “git rm -r .”?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/a/39920717/3848679&#34;&gt;How to make “spoiler” text in github wiki pages?&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
