@@ -15,7 +15,9 @@
       <pubDate>Wed, 24 May 2017 02:21:49 +0530</pubDate>
       
       <guid>http://suraj.io/post/blr-k8s-meetup-may-2017/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;One does not simply deploy containers to production&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+      <description>
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;One does not simply deploy containers to production&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://suraj.io/images/blr-k8s-meetup-may-2017/mordor_meme.jpg&#34; alt=&#34;One does not simply deploy containers to production&#34; title=&#34;One does not simply deploy containers to production&#34; /&gt;&lt;/p&gt;
 
@@ -87,11 +89,18 @@ an effort was made in imparting knowledge in this direction.&lt;/p&gt;
  feedback we received, people wanted to see some real world examples, the kind of applications that run on these
  platforms, and much more which are advanced topics and we would love to take up in normal meetup as opposed to a 101.&lt;/p&gt;
 
-&lt;p&gt;I would like conclude here by thanking all speakers, volunteers for spreading knowledge, &lt;a href=&#34;katacoda.com&#34;&gt;katacoda.com&lt;/a&gt;
+&lt;p&gt;I would like to conclude here by thanking all speakers, volunteers for spreading knowledge, &lt;a href=&#34;katacoda.com&#34;&gt;katacoda.com&lt;/a&gt;
  for awesome workshop material and audience for listening patiently and trying out things and making this meetup
  successful. And last but not the least, I would like to express my deepest gratitude to Red Hat for sponsoring the event
  and providing us with the venue and &lt;a href=&#34;https://www.linkedin.com/in/hemani-katyal-57900081&#34;&gt;Hemani Katyal&lt;/a&gt;
  for making this post an awesome read.&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kubernetes DIY hands-on exercises &lt;a href=&#34;https://www.katacoda.com/courses/kubernetes&#34;&gt;https://www.katacoda.com/courses/kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OpenShift DIY hands-on exercises &lt;a href=&#34;https://learn.openshift.com/&#34;&gt;https://learn.openshift.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
