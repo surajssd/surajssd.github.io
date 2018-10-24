@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/surajd
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://suraj.io
+  * I am surajd (https://keybase.io/surajd) on keybase.
+  * I have a public key ASB8i9JgXg7hQyCJZbvRL7BtgYjhzKacxHCdOVvGeOXJOQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207c8bd2605e0ee143208965bbd12fb06d8188e1cca69cc4709d395bc678e5c9390a",
+      "host": "keybase.io",
+      "kid": "01207c8bd2605e0ee143208965bbd12fb06d8188e1cca69cc4709d395bc678e5c9390a",
+      "uid": "429c2f4d7947aa1ac30212d9f279c919",
+      "username": "surajd"
+    },
+    "merkle_root": {
+      "ctime": 1540368201,
+      "hash": "ab409d433b86e1afcc38dde2c036d11378a216b3adc49a3c07712463af7e1e665b2036fb3c4b24ac1fbbcd1d0ae721a85c1ac236f51dcfb18515d7b93af1bcba",
+      "hash_meta": "edfee0adb394229de983f2f87f96f5d3abfde1361e82e9edb5f555cc7eee1907",
+      "seqno": 3841099
+    },
+    "service": {
+      "entropy": "ur+T8a5tGkbaceoi3FAnL5ep",
+      "hostname": "suraj.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.8.0"
+  },
+  "ctime": 1540368221,
+  "expire_in": 504576000,
+  "prev": "36808bba4306fcb142cdf4209e7ce9e73dcc99680dfdd7ac00aad4bc916bb5d4",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfIvSYF4O4UMgiWW70S+wbYGI4cymnMRwnTlbxnjlyTkKp3BheWxvYWTESpcCC8QgNoCLukMG/LFCzfQgnnzp5z3MmWgN/desAKrUvJFrtdTEIDcN8MeDjm+FpxVQwXnUKsaprVhY3MisztsrSLQG850LAgHCo3NpZ8RA1fwDq0t+dv8Az2gFTmBQiW2I+Gr/THgPLakRT7UcNHRnsuAT8EBwUiSqa8ErYqkB2BsWYWdlyoHQWS1bj/W6BqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAwgS25j2uXalb+eZOzeSqrXcFKqD0NPlsaPiD8xC5oco3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/surajd
+
+==================================================================
