@@ -4,7 +4,7 @@
     <head>
         
             
-                <title>Kubernetes Bangalore March 2019 Event Report</title>
+                <title>Root user inside container is root on the host</title>
             
         
 
@@ -18,32 +18,32 @@
             <meta name="author" content="Suraj Deshmukh">
         
         
-            <meta name="description" content="Event Report for Kubernetes Bangalore Meetup">
+            <meta name="description" content="The easiest way to prove that root inside the container is also root on the host">
         
 
         <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Kubernetes Bangalore March 2019 Event Report"/>
-<meta name="twitter:description" content="Event Report for Kubernetes Bangalore Meetup"/>
+<meta name="twitter:title" content="Root user inside container is root on the host"/>
+<meta name="twitter:description" content="The easiest way to prove that root inside the container is also root on the host"/>
 <meta name="twitter:site" content="@surajd_"/>
 
-        <meta property="og:title" content="Kubernetes Bangalore March 2019 Event Report" />
-<meta property="og:description" content="Event Report for Kubernetes Bangalore Meetup" />
+        <meta property="og:title" content="Root user inside container is root on the host" />
+<meta property="og:description" content="The easiest way to prove that root inside the container is also root on the host" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://suraj.io/post/k8s-blr-event-report-2019-03-16/" /><meta property="article:published_time" content="2019-03-21T01:00:51&#43;05:30"/>
-<meta property="article:modified_time" content="2019-03-21T01:00:51&#43;05:30"/>
+<meta property="og:url" content="https://suraj.io/post/root-in-container-root-on-host/" /><meta property="article:published_time" content="2019-06-25T11:57:07&#43;05:30"/>
+<meta property="article:modified_time" content="2019-06-25T11:57:07&#43;05:30"/>
 
         
-<meta itemprop="name" content="Kubernetes Bangalore March 2019 Event Report">
-<meta itemprop="description" content="Event Report for Kubernetes Bangalore Meetup">
+<meta itemprop="name" content="Root user inside container is root on the host">
+<meta itemprop="description" content="The easiest way to prove that root inside the container is also root on the host">
 
 
-<meta itemprop="datePublished" content="2019-03-21T01:00:51&#43;05:30" />
-<meta itemprop="dateModified" content="2019-03-21T01:00:51&#43;05:30" />
-<meta itemprop="wordCount" content="188">
+<meta itemprop="datePublished" content="2019-06-25T11:57:07&#43;05:30" />
+<meta itemprop="dateModified" content="2019-06-25T11:57:07&#43;05:30" />
+<meta itemprop="wordCount" content="793">
 
 
 
-<meta itemprop="keywords" content="kubernetes,meetup," />
+<meta itemprop="keywords" content="proc,docker,host,containers," />
 
         
 
@@ -235,43 +235,43 @@ if (!doNotTrack) {
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&text=Kubernetes%20Bangalore%20March%202019%20Event%20Report&via=surajd_" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&text=Root%20user%20inside%20container%20is%20root%20on%20the%20host&via=surajd_" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//plus.google.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f" target="_blank" class="share-btn google-plus">
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&title=Kubernetes%20Bangalore%20March%202019%20Event%20Report" target="_blank" class="share-btn reddit">
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&title=Root%20user%20inside%20container%20is%20root%20on%20the%20host" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&title=Kubernetes%20Bangalore%20March%202019%20Event%20Report" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&title=Root%20user%20inside%20container%20is%20root%20on%20the%20host" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&title=Kubernetes%20Bangalore%20March%202019%20Event%20Report" target="_blank" class="share-btn stumbleupon">
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&title=Root%20user%20inside%20container%20is%20root%20on%20the%20host" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -288,11 +288,11 @@ if (!doNotTrack) {
     <header>
     <div class="title">
         
-            <h1><a href="https://suraj.io/post/k8s-blr-event-report-2019-03-16/">Kubernetes Bangalore March 2019 Event Report</a></h1>
+            <h1><a href="https://suraj.io/post/root-in-container-root-on-host/">Root user inside container is root on the host</a></h1>
             
         
         
-            <p>Event Report for Kubernetes Bangalore Meetup</p>
+            <p>The easiest way to prove that root inside the container is also root on the host</p>
         
     </div>
     <div class="meta">
@@ -301,11 +301,11 @@ if (!doNotTrack) {
         
 
         <time class="published"
-            datetime='2019-03-21'>
-            March 21, 2019</time>
+            datetime='2019-06-25'>
+            June 25, 2019</time>
         <span class="author">Suraj Deshmukh</span>
         
-            <p>1 minute read</p>
+            <p>4 minute read</p>
         
         
     </div>
@@ -317,43 +317,43 @@ if (!doNotTrack) {
             
 
 
-<li><a href="//twitter.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&text=Kubernetes%20Bangalore%20March%202019%20Event%20Report&via=surajd_" target="_blank" class="share-btn twitter">
+<li><a href="//twitter.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&text=Root%20user%20inside%20container%20is%20root%20on%20the%20host&via=surajd_" target="_blank" class="share-btn twitter">
     <i class="fa fa-twitter"></i>
     <p>Twitter</p>
 </a></li>
 
 
-<li><a href="//plus.google.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f" target="_blank" class="share-btn google-plus">
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f" target="_blank" class="share-btn google-plus">
     <i class="fa fa-google-plus"></i>
     <p>Google+</p>
 </a></li>
 
 
-<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f" target="_blank" class="share-btn facebook">
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f" target="_blank" class="share-btn facebook">
     <i class="fa fa-facebook"></i>
     <p>Facebook</p>
 </a></li>
 
 
-<li><a href="//reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&title=Kubernetes%20Bangalore%20March%202019%20Event%20Report" target="_blank" class="share-btn reddit">
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&title=Root%20user%20inside%20container%20is%20root%20on%20the%20host" target="_blank" class="share-btn reddit">
     <i class="fa fa-reddit-alien"></i>
     <p>Reddit</p>
 </a></li>
 
 
-<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&title=Kubernetes%20Bangalore%20March%202019%20Event%20Report" target="_blank" class="share-btn linkedin">
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&title=Root%20user%20inside%20container%20is%20root%20on%20the%20host" target="_blank" class="share-btn linkedin">
     <i class="fa fa-linkedin"></i>
     <p>LinkedIn</p>
 </a></li>
 
 
-<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f&title=Kubernetes%20Bangalore%20March%202019%20Event%20Report" target="_blank" class="share-btn stumbleupon">
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f&title=Root%20user%20inside%20container%20is%20root%20on%20the%20host" target="_blank" class="share-btn stumbleupon">
     <i class="fa fa-stumbleupon"></i>
     <p>StumbleUpon</p>
 </a></li>
 
 
-<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=https%3a%2f%2fsuraj.io%2fpost%2fk8s-blr-event-report-2019-03-16%2f" target="_blank" class="share-btn email">
+<li><a href="mailto:?subject=Check out this post by Suraj%20Deshmukh&body=https%3a%2f%2fsuraj.io%2fpost%2froot-in-container-root-on-host%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
 </a></li>
@@ -363,49 +363,137 @@ if (!doNotTrack) {
     
 
     <div id="content">
-        <p>The Kubernetes Bangalore Meetup was organized at Arvind Internet on Feb 16th 2019. The agenda for the meetup was to teach Kubernetes to the beginners.</p>
+        
 
-<p>Meetup agenda can be found <a href="https://www.meetup.com/kubernetes-openshift-India-Meetup/events/259045613/">here</a>.</p>
+<p>Here are simple steps that you can follow to prove that the <code>root</code> user inside container is also <code>root</code> on the host. And how to mitigate this.</p>
 
-<p>The moments from Meetup:</p>
+<h2 id="root-in-container-root-on-host">Root in container, root on host</h2>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We go online in sometime here <a href="https://t.co/FkwgOx0Tm4">https://t.co/FkwgOx0Tm4</a></p>&mdash; Kubernetes Bangalore (@k8sBLR) <a href="https://twitter.com/k8sBLR/status/1106836598987997184?ref_src=twsrc%5Etfw">March 16, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>I have a host with docker daemon running on it. I start a normal container on it with <code>sleep</code> process as PID1. See in the following output that the container <code>clever_lalande</code> started with <code>sleep</code> process.</p>
 
+<pre><code class="language-bash">$ docker run -d --rm alpine sleep 9999
+6c541cf8f7b315783d2315eebc2f7dddd1f7b26f427e182f8597b10f2746ab0b
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/pmishra1598?ref_src=twsrc%5Etfw">@pmishra1598</a> kick started the Meetup by explaining what <a href="https://twitter.com/hashtag/Kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#Kubernetes</a> is! Currently clarifying what a pod is. <a href="https://t.co/Ny7bN9c62x">pic.twitter.com/Ny7bN9c62x</a></p>&mdash; Kubernetes Bangalore (@k8sBLR) <a href="https://twitter.com/k8sBLR/status/1106843045570453507?ref_src=twsrc%5Etfw">March 16, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+$ docker ps
+CONTAINER ID    IMAGE      COMMAND         CREATED             STATUS           PORTS   NAMES
+6c541cf8f7b3    alpine     &quot;sleep 9999&quot;    12 seconds ago      Up 11 seconds            clever_lalande
+</code></pre>
 
+<p>Now let&rsquo;s find out the process <code>sleep</code> on the host. Here in the following output you can see that the process sleep is running as user <code>root</code>.</p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Huge turnout at today&#39;s meetup it&#39;s on 🔥🔥 <a href="https://t.co/YYbMBoumWw">pic.twitter.com/YYbMBoumWw</a></p>&mdash; Kubernetes Bangalore (@k8sBLR) <a href="https://twitter.com/k8sBLR/status/1106847490299576320?ref_src=twsrc%5Etfw">March 16, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<pre><code class="language-bash">$ ps aufx | grep sleep
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root      4826  0.3  0.0   1552     4 ?        Ss   07:34   0:00      \_ sleep 9999
+core      4864  0.0  0.0   6864   964 pts/0    S+   07:34   0:00          \_ grep --colour=auto sleep
+</code></pre>
 
+<p>Also the sleep process is root inside the container.</p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Deploying your containers on kubernetes by <a href="https://twitter.com/hrishike8?ref_src=twsrc%5Etfw">@hrishike8</a>. <a href="https://twitter.com/hashtag/kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#kubernetes</a> <a href="https://t.co/JgLaNGVgRu">pic.twitter.com/JgLaNGVgRu</a></p>&mdash; Kubernetes Bangalore (@k8sBLR) <a href="https://twitter.com/k8sBLR/status/1106893383954501632?ref_src=twsrc%5Etfw">March 16, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<pre><code class="language-bash">$ docker exec -it clever_lalande id
+uid=0(root) gid=0(root)
+</code></pre>
 
+<h2 id="non-root-inside-the-container-non-root-on-host">Non-root inside the container, non-root on host</h2>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Create ingress routing session by Deepak Kumar. The live video stream is up at: <a href="https://t.co/FkwgOxiuKE">https://t.co/FkwgOxiuKE</a> <a href="https://twitter.com/hashtag/kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#kubernetes</a> <a href="https://twitter.com/hashtag/networking?src=hash&amp;ref_src=twsrc%5Etfw">#networking</a> <a href="https://t.co/qoxjzbdldg">pic.twitter.com/qoxjzbdldg</a></p>&mdash; Kubernetes Bangalore (@k8sBLR) <a href="https://twitter.com/k8sBLR/status/1106901676575911937?ref_src=twsrc%5Etfw">March 16, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>The user I am logged into this machine is called <code>core</code> with user id 500.</p>
 
+<pre><code class="language-bash">$ whoami
+core
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/dolftax?ref_src=twsrc%5Etfw">@dolftax</a> taking us through Kubernetes networking. Watch him live at: <a href="https://t.co/FkwgOxiuKE">https://t.co/FkwgOxiuKE</a><a href="https://twitter.com/hashtag/kubernetes?src=hash&amp;ref_src=twsrc%5Etfw">#kubernetes</a> <a href="https://twitter.com/hashtag/networking?src=hash&amp;ref_src=twsrc%5Etfw">#networking</a> <a href="https://t.co/1XXLWxNYTy">pic.twitter.com/1XXLWxNYTy</a></p>&mdash; Kubernetes Bangalore (@k8sBLR) <a href="https://twitter.com/k8sBLR/status/1106894880226320385?ref_src=twsrc%5Etfw">March 16, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+$ id
+uid=500(core) gid=500(core) groups=500(core),10(wheel),233(docker),248(systemd-journal),250(portage),251(rkt) context=system_u:system_r:kernel_t:s0
+</code></pre>
 
+<p>Let&rsquo;s start the container in the same way but with additional flag <code>--user</code>. Here I started a new container and forced it to run under the security context of the user <code>core</code>. Here I specify the UID same as the UID on the host. The documentation of the flag says that:</p>
 
-<p>Here is the link to meetup recording:</p>
+<blockquote>
+<p>-u, &ndash;user=&ldquo;&rdquo;.</p>
 
+<p>Sets the username or UID used and optionally the groupname or GID for the specified command.</p>
+</blockquote>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/ccmYsFyN5dI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<p>Here is the container that is started with <code>sleep</code> process named <code>wonderful_proskuriakova</code>.</p>
 
+<pre><code class="language-bash">$ docker run -d --rm --user ${UID}:${UID} alpine sleep 9999
+1cdc11a449e4e62a9557a4d7b586aa320f5512f2746f4a8e1cac7b9e6d2e1225
 
-<p>Photos from the meetup can be found <a href="https://photos.app.goo.gl/zh866w473bjMvCcc8">here</a>.</p>
+$ docker ps
+CONTAINER ID    IMAGE     COMMAND        CREATED            STATUS          PORTS     NAMES
+1cdc11a449e4    alpine    &quot;sleep 9999&quot;   25 seconds ago     Up 25 seconds             wonderful_proskuriakova
+</code></pre>
 
-<p>See you in the next meetup.</p>
+<p>If I try to find the same process on the host here you can clearly see that the process is not running as <code>root</code> but as user <code>core</code>.</p>
 
-<p>Also this event report was auto-generated using the project <a href="https://github.com/surajssd/blog-generator">blog-generator</a>, all kinds of contribution are most welcome.</p>
+<pre><code class="language-bash">$ ps aufx | grep sleep
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+core      4607  0.0  0.0   1552     4 ?        Ss   07:30   0:00      \_ sleep 9999
+core      4648  0.0  0.0   6864   900 pts/0    S+   07:30   0:00          \_ grep --colour=auto sleep
+</code></pre>
+
+<p>Also inside the container I am running as UID <code>500</code>.</p>
+
+<pre><code class="language-bash">$ docker exec -it wonderful_proskuriakova id
+uid=500 gid=500
+</code></pre>
+
+<p>This is just one way to mitigate the user to be non-root. You should also drop all the capabilities and whitelist the capabilities that are absolutely needed. Also provide a seccomp profile that is locked down which only allows the syscalls that are needed by your application. There are many times where you want to run as root inside the container in such situations you should use user namespaces, which is what we are looking in the next section.</p>
+
+<h2 id="root-inside-container-non-root-on-host">Root inside container, non-root on host</h2>
+
+<p>Now I have docker daemon which is started with docker user namespace enabled. Look at the flag <code>--userns-remap=default</code> being used to start the docker daemon with user namespace. To know more about enabling user namespace, follow docs <a href="https://docs.docker.com/engine/security/userns-remap/">here</a>.</p>
+
+<pre><code class="language-bash">$ systemctl status docker-userns
+● docker-userns.service - Docker Application Container Engine
+   Loaded: loaded (/etc/systemd/system/docker-userns.service; disabled; vendor preset: disabled)
+   Active: active (running) since Tue 2019-06-25 07:07:37 UTC; 1h 11min ago
+     Docs: http://docs.docker.com
+ Main PID: 4011 (dockerd)
+    Tasks: 10
+   Memory: 61.8M
+   CGroup: /system.slice/docker-userns.service
+           └─4011 /run/torcx/bin/dockerd --host=fd:// --host=tcp://127.0.0.1:2376 --containerd=/var/run/docker/libcontainerd/docker-containerd.sock --userns-remap=default --pidfile /var/run/docker-userns.pid --selinux-enabled=true
+...
+</code></pre>
+
+<p>Now start the container like we did for the first time without any <code>--user</code> flag. In the following output you can see that the container started with name <code>sad_pasteur</code>.</p>
+
+<pre><code class="language-bash">$ docker run --rm -d alpine sleep 9999
+05290a7088b3e7c0e4e80cbb3a63c0d63a49627b8d31ec9f75f44b9a57b717f4
+
+$ docker ps
+CONTAINER ID    IMAGE     COMMAND         CREATED            STATUS        PORTS    NAMES
+05290a7088b3    alpine    &quot;sleep 9999&quot;    2 seconds ago      Up 1 second            sad_pasteur
+</code></pre>
+
+<p>Now if we see the <code>sleep</code> process on host, the process has started with different user <code>100000</code> on host.</p>
+
+<pre><code class="language-bash">$ ps aufx | grep sleep
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+100000    5467  0.2  0.0   1552     4 ?        Ss   08:16   0:00      \_ sleep 9999
+core      5511  0.0  0.0   6864   988 pts/0    S+   08:16   0:00          \_ grep --colour=auto sleep
+</code></pre>
+
+<p>But inside the container the user is still <code>root</code>.</p>
+
+<pre><code class="language-bash">$ docker exec -it sad_pasteur id
+uid=0(root) gid=0(root)
+</code></pre>
+
+<p>This is because of the user namespace enabled on the docker daemon that we see user <code>100000</code> on host. This mapping of the user id on host and inside the container can be found in the following files:</p>
+
+<pre><code>$ cat /etc/subuid
+dockremap:100000:65536
+
+$ cat /etc/subgid
+dockremap:100000:65536
+</code></pre>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li><a href="https://github.com/docker/labs/blob/master/security/userns/README.md">Docker Lab: User Namespaces</a></li>
+<li><a href="https://docs.docker.com/engine/security/userns-remap/">Isolate containers with a user namespace</a></li>
+</ul>
 
     </div>
 
@@ -426,7 +514,7 @@ if (!doNotTrack) {
                     
 
                     
-                        Category
+                        Categories
                     
                 
             </li>
@@ -435,7 +523,11 @@ if (!doNotTrack) {
 
     
     
-        <li><a href='/categoriesevent_report'>event_report</a></li>
+        <li><a href='/categoriesdocker'>docker</a></li>
+    
+        <li><a href='/categorieshost'>host</a></li>
+    
+        <li><a href='/categoriescontainers'>containers</a></li>
     
 </ul>
 
@@ -443,13 +535,10 @@ if (!doNotTrack) {
 </article>
 <ul class="actions pagination">
     
-        <li><a href="https://suraj.io/post/apiserver-in-minikube-static-configs/"
-                class="button big previous">Make static configs available for apiserver in minikube</a></li>
+        <li><a href="https://suraj.io/post/project-specific-scripts/"
+                class="button big previous">Project specific scripts</a></li>
     
 
-    
-        <li><a href="https://suraj.io/post/surajd-talks-links/"
-                class="button big next">Suraj Deshmukh&#39;s talks at conferences</a></li>
     
 </ul>
 
