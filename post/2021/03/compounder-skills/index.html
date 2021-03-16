@@ -2,18 +2,21 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>Notes on talk - Advanced testing in golang by Mitchell Hashimoto - Suraj Deshmukh</title>
+<title>On Compounder Skills - Suraj Deshmukh</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta name="generator" content="Hugo 0.80.0" /><meta property="og:site_name" content="Suraj Deshmukh">
-  <meta property="og:title" content="Notes on talk - Advanced testing in golang by Mitchell Hashimoto">
-  <meta property="og:description" content="This talk has really great takeaways which are worth considering while writing your tests">
-  <meta property="description" content="This talk has really great takeaways which are worth considering while writing your tests">
-  <meta property="og:url" content="https://suraj.io/post/advanced-golang-testing-mitchellh-talk-notes/">
+  <meta property="og:title" content="On Compounder Skills">
+  <meta property="og:description" content="The foundational skills which improves everything else.">
+  <meta property="description" content="The foundational skills which improves everything else.">
+  <meta property="og:url" content="https://suraj.io/post/2021/03/compounder-skills/">
   <meta property="og:type" content="article">
   
-    <meta property="og:image" content="https://github.com/surajssd.png">
+    
+      <meta property="og:image" content="https://suraj.io/post/2021/03/compounder-skills/compound.png">
+      <meta property="og:image:alt" content="Compounding Chart">
+    
   
   
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css">
@@ -28,7 +31,7 @@
     <h1 class="nav-title">
       <a href="/" class="nav">
         
-          Notes on talk - Advanced testing in golang by Mitchell Hashimoto
+          On Compounder Skills
         
       </a>
     </h1>
@@ -82,31 +85,31 @@
 
   
     
-    <a href="//twitter.com/share?text=Notes%20on%20talk%20-%20Advanced%20testing%20in%20golang%20by%20Mitchell%20Hashimoto&amp;url=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=On%20Compounder%20Skills&amp;url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f&amp;title=Notes%20on%20talk%20-%20Advanced%20testing%20in%20golang%20by%20Mitchell%20Hashimoto" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f&amp;title=On%20Compounder%20Skills" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f&amp;title=Notes%20on%20talk%20-%20Advanced%20testing%20in%20golang%20by%20Mitchell%20Hashimoto" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f&amp;title=On%20Compounder%20Skills" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -183,16 +186,16 @@
     <header>
   <div class="title">
     
-      <h2><a href="/post/advanced-golang-testing-mitchellh-talk-notes/">Notes on talk - Advanced testing in golang by Mitchell Hashimoto</a></h2>
+      <h2><a href="/post/2021/03/compounder-skills/">On Compounder Skills</a></h2>
     
     
-      <p>This talk has really great takeaways which are worth considering while writing your tests</p>
+      <p>The foundational skills which improves everything else.</p>
     
   </div>
   <div class="meta">
-    <time datetime="2018-03-07 02:21:49 &#43;0530 IST">March 7, 2018</time>
+    <time datetime="2021-03-16 07:07:07 &#43;0530 IST">March 16, 2021</time>
     <p>Suraj Deshmukh</p>
-    <p>1-Minute Read</p>
+    <p>9-Minute Read</p>
   </div>
 </header>
 
@@ -204,31 +207,31 @@
 
   
     
-    <a href="//twitter.com/share?text=Notes%20on%20talk%20-%20Advanced%20testing%20in%20golang%20by%20Mitchell%20Hashimoto&amp;url=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=On%20Compounder%20Skills&amp;url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f&amp;title=Notes%20on%20talk%20-%20Advanced%20testing%20in%20golang%20by%20Mitchell%20Hashimoto" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f&amp;title=On%20Compounder%20Skills" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f&amp;title=Notes%20on%20talk%20-%20Advanced%20testing%20in%20golang%20by%20Mitchell%20Hashimoto" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f&amp;title=On%20Compounder%20Skills" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2fadvanced-golang-testing-mitchellh-talk-notes%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fcompounder-skills%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -236,27 +239,46 @@
 
     </div>
     <div class="content">
-      
-      <h2 id="test-fixtures">Test Fixtures</h2>
-<ul>
-<li>&ldquo;go test&rdquo; sets pwd as package directory</li>
-</ul>
-<h2 id="test-helpers">Test Helpers</h2>
-<ul>
-<li>should never return an error they should access to the <code>*testing.T</code> object</li>
-<li>call <code>t.Helper()</code> in the beginning (works only for go1.9+)</li>
-<li>for things reqiuiring clean up return closures</li>
-</ul>
-<h2 id="configurability">Configurability</h2>
-<ul>
-<li>Unconfigurable behavior is often a point of difficulty for tests. e.g. ports, timeouts, paths.</li>
-<li>Over-parameterize structs to allow tests to fine-tune their behavior</li>
-<li>It&rsquo;s ok to make these configs unexported so only tests can set them.</li>
-</ul>
-<h2 id="slides">Slides</h2>
-<!-- raw HTML omitted -->
-<h2 id="video">Video</h2>
-<!-- raw HTML omitted -->
+      <a href="/post/2021/03/compounder-skills/" class="image" style="--bg-image: url('https://suraj.io/post/2021/03/compounder-skills/compound.png');">
+    <img src="https://suraj.io/post/2021/03/compounder-skills/compound.png" alt="Compounding Chart">
+  </a>
+      <p>There are specific skills which you should acquire early on in your life. These skills are the foundational skills. Everything you do after developing these skills becomes better, faster and easier. I call these skills <strong>Compounder Skills</strong>. Derived from the term <a href="https://en.wikipedia.org/wiki/Compound_interest">&ldquo;Compound Interest&rdquo;</a>. The idea is that once you are laced with a particular compounder skill, you can apply it in various fields of your life. An example of a compounder skill that most humans get exposed to is &ldquo;school education&rdquo;. The disadvantages of being unlettered are numerous viz. being dependent for information, gullible to most straightforward scams, the limited scope of jobs they can do, etc.</p>
+<p>This blog tries to enlist some of the compounder skills I think everyone should have. This is certainly not an exhaustive list of all the skills a human should have. There is a limited time we have on this earth, and the possibilities of learning are endless. Sometimes it is better to get help from a professional, you can&rsquo;t do everything by yourself. Also, this list is very much composed from my experience in life, and you might think that there are specific other skills that qualify as compounder skills, which is fine as well.</p>
+<h2 id="-infinite-curiosity">🤔 Infinite Curiosity</h2>
+<p>We are super curious as infants, but it starts to recede as we grow old and get accustomed to things and start assuming things the way they are without considering why it is that way. Nurturing a genuine curiosity towards anything and everything, in general, is a great first thing to have. This curiosity is what will drive you to learn more and get into action. This will be your driving force for everything you do. I won&rsquo;t classify &ldquo;curiosity&rdquo; as a skill but a learnable trait.</p>
+<h2 id="-reading">📖 Reading</h2>
+<p>The first and foremost skill everyone needs to enhance is reading. After we complete our formal education, we might feel like it is the end of the learning for life. Someone with a fixed mindset like that generally sees a very slow upward trajectory in their job and life. Doing the same things repeatedly will not result in progress. What got you here might not be helpful to go upwards. There are so many things worth learning that are not taught in school education. Later in professional programs, the scope becomes even narrower. Every individual needs to study psychology, philosophy, history, business skills, finance, investment, etc.</p>
+<p>Don&rsquo;t read something because someone recommended a book. Read things that interest you, so it does not feel like a chore but more of a fun thing to do. If you face some problem at work or in life in general, then read a book that promises to provide a solution to your problem.</p>
+<p>The reading does not have to be restricted to books only, but blogs can also work. But the benefits that a book provides are immense, it is not condensed like a blog, and you understand concepts with contexts that blogs might not have. The bottom line is knowledge is power. Knowledge comes from reading. Power helps you propel upwards.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Read what you love until you love to read.</p>&mdash; Naval (@naval) <a href="https://twitter.com/naval/status/1002068699761659905?ref_src=twsrc%5Etfw">May 31, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="-writing">✍ Writing</h2>
+<p>Once you get accustomed to reading, don&rsquo;t just swallow it mindlessly. If it is fiction, it is okay. But if you are reading non-fiction, business, philosophy, or psychology, then take notes in your own words. Write down your digested thoughts. Highlights won&rsquo;t cut it. Highlights are just out of context text for your future self. Please note down the feeling you had or the insight that came to you, and that made you highlight that text. Your notes will help your future self add meaning to the highlights and bring the feeling and insights back to life.</p>
+<p>Once you form the habit of writing, especially writing it in public, you will start formulating your opinions and ideas. Since you will be writing about something to explain it to others, you will have a more precise understanding of the topic yourself. You will start forming mental models, and you will understand what fits where. You will create connections of non-relating topics, and out of these connections, you will come up with unique ideas that are original and your own.</p>
+<p>Do writing in public or not, it will help you clarify concepts. If you do it in public, you are making your thoughts open to others, thereby increasing your chances of serendipitous encounters. We, as knowledge-workers, have relied mainly on writing to convey our thoughts. With pandemic, as more and more people start working remotely, the importance of writing to share your ideas has never been so immense. Since you will present your thoughts very clearly and concisely, you will have an advantage over someone who cannot convey their thoughts in writing. You will be more productive.</p>
+<h2 id="-typing">⌨ Typing</h2>
+<p>&ldquo;Typing&rdquo;, yes, is a vital skill if you are a knowledge-worker. Like I mentioned before, the importance of writing has increased significantly since the pandemic for everyone and especially for anyone working remotely. But how do you write, of course not using your hand but using the keyboard! Hence along with writing, the typing also has to be faster and improved. If you are slow in typing, your keyboard will only come in your way of thinking. The tool will make you laboured; hence you might lose the train of thought. If you are wondering how to improve typing skills, <a href="https://suraj.io/post/2021/02/typing-skills/">read it here</a>.</p>
+<h2 id="-task-management">✅ Task Management</h2>
+<p>Task management is something everyone should be well versed in. I think doing the right thing at the right time is very important. And for that, you need a system that guides you through your day to day, week to week, month to month and year to year. Without such a deliberate approach, you will just go with the flow or react to whatever life throws at you. Having a system of managing tasks makes you &ldquo;proactive&rdquo;. As per the <a href="https://jamesclear.com/entropy">second law of thermodynamics</a>, things left on their own devices generally become messy and chaotic. You need to put extra work to keep them in equilibrium.</p>
+<p>A task management system does not matter how you implement it; it will make more room in your 24hrs for you to do work for which you could never find the time otherwise. Since the system will become your life operating system, everything will be kept track of. Hence you will have visibility of your long term goals, short term projects and immediate tasks. You will have a compass of your life and the things you wanna achieve.</p>
+<p>Once you have such a system in place, you will be confident of finishing and seeing through any significant endeavour you undertake. It won&rsquo;t guarantee 100% success, but it does ensure a 100% input. It will give you a clear picture of what went wrong or what things you did not track but should have followed.</p>
+<p>Since this system acts as a guard rail on what you are doing, it helps you focus and not get distracted by every new shiny thing that comes along and distracts you from your work.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Focus requires saying no to great opportunities.</p>&mdash; Kelsey Hightower (@kelseyhightower) <a href="https://twitter.com/kelseyhightower/status/1159871663460085760?ref_src=twsrc%5Etfw">August 9, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Reading the book <a href="https://suraj.io/post/book-review-getting-things-done/">&ldquo;Getting things done by David Allen&rdquo;</a> is a great first thing to do in this direction.</p>
+<h2 id="-knowledge-management">🧠 Knowledge Management</h2>
+<p>With the amount of knowledge you will be processing after reading and writing notes from that reading, you need a place to capture all that knowledge and wisdom. Generally, folks keep it in notebooks, but then once those notebooks are filled, they are shoved in some corner of the cupboard and never opened again. Such information is hard to find, and physical notebooks don&rsquo;t feature &ldquo;quick access&rdquo; or &ldquo;search&rdquo;. You might keep such knowledge in google docs, but again even that can get scattered really quickly.</p>
+<p>Create a system with accessibility in mind. Store the knowledge and wisdom in such a way that whenever your future self wants to read or find it, they can do it with as less hurdles as possible. Recollect an instance when you were thinking about this term or an excellent insight when reading something. You even wrote it down somewhere. Now you don&rsquo;t know where and how to find it and what word to search for? So do your future self a favour by doing extra work now.</p>
+<p>This will make sure you have a single place for your knowledge once you have that and you keep visiting this place time and again you keep that knowledge current, and there is a high chance that you form connections among the various pieces of knowledge.</p>
+<p>I have had quite a ride with my knowledge management experiences which are <a href="https://suraj.io/post/2021/02/kms-journey/">documented here</a>. Now I follow the principles mentioned in the book <a href="https://suraj.io/post/book-review-how-to-take-smart-notes/">&ldquo;How to take smart notes by Sönke Ahrens&rdquo;</a> for taking notes.</p>
+<h2 id="-investment-skills">💰 Investment skills</h2>
+<p>I think the whole talk of compounder skills is incomplete without talking about the compound effect on the money itself. Gain knowledge of investment early on in your life. The small investments you make early on, armed with compound interest, pay big time later in your life. Even if you start earning a lot later in your life, the compounded funds' value early on will give substantial results to you than what you will make.
+Learning how to invest even a small per cent of your earnings every month than squandering everything will help you in the time of crisis. You don&rsquo;t need to do day trading, but knowing the tools and the jargons will definitely help you.</p>
+<hr>
+<p>The aforementioned list followed an order. Each skill created groundwork for the next one and so on. It is essential to have the skill to perfect the subsequent ones. Having one helps exponentially on the next ones.</p>
+<p>Now that you are well versed in reading, capturing what you are reading, presenting your thoughts, managing your tasks and investing money so that it is not rotting stagnant in one place. I think you have a solid foundation to build the <em>Burj Khalifas</em> of the world. The work does not end here. The task of identifying the compounder skills is continuous. Keep an eye; it is never too late to start learning them. But as the nature of compounding goes, it pays off if you hone these skills early on in your life. Compounder skills fall into the &ldquo;Important but not urgent&rdquo; quadrant of the <a href="https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method">Eisenhower matrix</a>. I implore you to start working on them and improve your life as a result.</p>
 
     </div>
     <footer>
@@ -265,9 +287,9 @@
     <ul class="categories">
       
         
-          <li><a class="article-terms-link" href="/categories/golang/">golang</a></li>
+          <li><a class="article-terms-link" href="/categories/non-tech/">non-tech</a></li>
         
-          <li><a class="article-terms-link" href="/categories/programming/">programming</a></li>
+          <li><a class="article-terms-link" href="/categories/productivity/">productivity</a></li>
         
       
     </ul>
@@ -276,9 +298,9 @@
     <ul class="tags">
       
         
-          <li><a class="article-terms-link" href="/tags/golang/">golang</a></li>
+          <li><a class="article-terms-link" href="/tags/non-tech/">non-tech</a></li>
         
-          <li><a class="article-terms-link" href="/tags/programming/">programming</a></li>
+          <li><a class="article-terms-link" href="/tags/productivity/">productivity</a></li>
         
       
     </ul>
@@ -318,10 +340,8 @@
   
   <div class="pagination">
     
-      <a href="/post/using-prometheus/" class="button left"><span>Prometheus with existing application on OpenShift</span></a>
     
-    
-      <a href="/post/golang-methods-interfaces/" class="button right"><span>Methods that satisfy interfaces in golang</span></a>
+      <a href="/post/2021/02/typing-skills/" class="button right"><span>Importance of Typing Skills</span></a>
     
   </div>
 
