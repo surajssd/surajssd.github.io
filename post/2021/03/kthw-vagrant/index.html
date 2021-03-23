@@ -2,18 +2,21 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>Exec in container environment - Suraj Deshmukh</title>
+<title>Kubernetes The Hard Way in &#34;Vagrant&#34;? - Suraj Deshmukh</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <meta name="generator" content="Hugo 0.80.0" /><meta property="og:site_name" content="Suraj Deshmukh">
-  <meta property="og:title" content="Exec in container environment">
-  <meta property="og:description" content="The correct way to use exec and the signal passing.">
-  <meta property="description" content="The correct way to use exec and the signal passing.">
-  <meta property="og:url" content="https://suraj.io/post/2021/01/shell-exec/">
+  <meta property="og:title" content="Kubernetes The Hard Way in &#34;Vagrant&#34;?">
+  <meta property="og:description" content="The first step in your CKA preparation!">
+  <meta property="description" content="The first step in your CKA preparation!">
+  <meta property="og:url" content="https://suraj.io/post/2021/03/kthw-vagrant/">
   <meta property="og:type" content="article">
   
-    <meta property="og:image" content="https://github.com/surajssd.png">
+    
+      <meta property="og:image" content="https://suraj.io/post/2021/03/kthw-vagrant/cert.png">
+      <meta property="og:image:alt" content="CKA logo">
+    
   
   
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css">
@@ -28,7 +31,7 @@
     <h1 class="nav-title">
       <a href="/" class="nav">
         
-          Exec in container environment
+          Kubernetes The Hard Way in &#34;Vagrant&#34;?
         
       </a>
     </h1>
@@ -82,31 +85,31 @@
 
   
     
-    <a href="//twitter.com/share?text=Exec%20in%20container%20environment&amp;url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Kubernetes%20The%20Hard%20Way%20in%20%22Vagrant%22%3f&amp;url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f&amp;title=Exec%20in%20container%20environment" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f&amp;title=Kubernetes%20The%20Hard%20Way%20in%20%22Vagrant%22%3f" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f&amp;title=Exec%20in%20container%20environment" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f&amp;title=Kubernetes%20The%20Hard%20Way%20in%20%22Vagrant%22%3f" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -183,16 +186,16 @@
     <header>
   <div class="title">
     
-      <h2><a href="/post/2021/01/shell-exec/">Exec in container environment</a></h2>
+      <h2><a href="/post/2021/03/kthw-vagrant/">Kubernetes The Hard Way in &#34;Vagrant&#34;?</a></h2>
     
     
-      <p>The correct way to use exec and the signal passing.</p>
+      <p>The first step in your CKA preparation!</p>
     
   </div>
   <div class="meta">
-    <time datetime="2021-01-23 10:10:41 &#43;0530 IST">January 23, 2021</time>
+    <time datetime="2021-03-23 07:07:07 &#43;0530 IST">March 23, 2021</time>
     <p>Suraj Deshmukh</p>
-    <p>3-Minute Read</p>
+    <p>2-Minute Read</p>
   </div>
 </header>
 
@@ -204,31 +207,31 @@
 
   
     
-    <a href="//twitter.com/share?text=Exec%20in%20container%20environment&amp;url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Kubernetes%20The%20Hard%20Way%20in%20%22Vagrant%22%3f&amp;url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f&amp;title=Exec%20in%20container%20environment" target="_blank" rel="noopener" class="nav share-btn reddit">
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f&amp;title=Kubernetes%20The%20Hard%20Way%20in%20%22Vagrant%22%3f" target="_blank" rel="noopener" class="nav share-btn reddit">
           <p>Reddit</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f&amp;title=Exec%20in%20container%20environment" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f&amp;title=Kubernetes%20The%20Hard%20Way%20in%20%22Vagrant%22%3f" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f01%2fshell-exec%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Suraj%20Deshmukh&amp;body=https%3a%2f%2fsuraj.io%2fpost%2f2021%2f03%2fkthw-vagrant%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -236,95 +239,21 @@
 
     </div>
     <div class="content">
-      
-      <p>If you use <code>exec</code> in your container script, then the container or Kubernetes pod might exit after the command that is exec-ed into has exited. But if that&rsquo;s what you wanted, then it&rsquo;s okay. This blog tries to explain how to pass the signals to the applications, how they work differently when invoked uniquely and what to do if the application does handle them.</p>
-<h2 id="what-are-the-signals">What are the &ldquo;Signals&rdquo;?</h2>
-<p>Signals are messages one process can send to another process, mostly used in UNIX like operating systems.</p>
-<h2 id="how-exec-works-in-linux">How exec works in Linux?</h2>
-<p>This is copied from the man page:</p>
-<p><img src="/post/2021/01/shell-exec/1-exec.png" alt="Exec Man Page" title="Exec Man Page"></p>
-<h2 id="an-application-spawned-by-a-shell-script">An application spawned by a shell script.</h2>
-<p>To ensure that the signals are passed effectively to the real application, spawned by a shell script, you can do something similar to what is done in this snippet. Use <code>trap</code> to call a function which does the cleanup after receiving any of the registered signals like <code>SIGHUP</code>, <code>SIGTERM</code> or <code>SIGINT</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">function</span> cleanup<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-  kill <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>pid<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-  exit
-<span style="color:#f92672">}</span>
-
-trap cleanup SIGHUP SIGTERM SIGINT
-
-echo <span style="color:#e6db74">&#34;sleeping&#34;</span>
-sleep infinity &amp;
-pid<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>!<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-
-wait <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>!<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
-</code></pre></div><p>If a process runs in foreground spawned by a bash script, then the bash script does not respond to the signals, so the <code>trap</code> is rendered useless. Hence run it in the background and wait on it using <code>wait</code>.
-Make sure that the script is run via <code>ENTRYPOINT</code> the way it is done in this <code>Dockerfile</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> quay.io/surajd/fedora-networking</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> ./cleanup.sh /cleanup.sh<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> /cleanup.sh<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>Since the above script, <code>cleanup.sh</code> is listening on three types of signals: <code>SIGHUP</code>, <code>SIGTERM</code>, <code>SIGINT</code> if any of these is sent to the script the container will stop working. So the following commands will work just fine:</p>
-<p><img src="/post/2021/01/shell-exec/4-docker-commands.png" alt="Docker commands" title="Docker commands"></p>
-<p>Here is a video that shows how the above commands works:</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/IygRbOeJPGQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="an-application-spawned-directly">An application spawned directly.</h2>
-<p>Here is a golang application that handles signals. This golang app can be run directly via <code>ENTRYPOINT</code>.</p>
-<p><img src="/post/2021/01/shell-exec/5-golang-code.png" alt="Golang Signals App" title="Golang Signals App"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> quay.io/surajd/fedora-networking</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> ./signals /signals<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> /signals<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>This golang code is also listening on the same signals: <code>SIGHUP</code>, <code>SIGTERM</code>, <code>SIGINT</code>. The code has a main goroutine which spawns another goroutine. The background goroutine is listening to the aforementioned signals. While the main goroutine is waiting (<code>←done</code>) for the background goroutine to receive signal and finally exit. In the <code>Dockerfile</code>, we have simply copied the binary directly and spawn it using <code>ENTRYPOINT</code>, this ensures that the application receives the signals directly. <code>ENTRYPOINT</code> is actually starting the given process using <code>exec</code>.</p>
-<p>Watch the video below, which shows how the signals are passed to the application:</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/z60M7FwYFJM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="when-should-you-use-exec">When should you use <code>exec</code>?</h2>
-<p>Now consider that you have an application which listens to those signals, but for some reason, you need to spawn that application via a shell script. This is when you use <code>exec</code>. We are using the same golang application as before but spawning it from a bash script. Notice that this script is invoking that golang binary using <code>exec</code>, this replaces the bash script with golang binary as <code>PID 1</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-echo <span style="color:#e6db74">&#34;spawning the golang app&#34;</span>
-
-<span style="color:#75715e"># This app can handle the signals so no need to handle them on</span>
-<span style="color:#75715e"># behalf of the application here in the bash script.</span>
-exec ./signals
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> quay.io/surajd/fedora-networking</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> ./signals /signals<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> ./startup.sh /startup.sh<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">ENTRYPOINT</span> /startup.sh<span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><p>If we get shell access of the container, you will see that the golang <code>signals</code> app has become <code>PID 1</code>.</p>
-<p><img src="/post/2021/01/shell-exec/9-console-output.png" alt="Console output" title="Console output"></p>
-<p>Here is the video that shows these signals passing in action:</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/r8QWTeFm4QY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h2 id="conclusion">Conclusion</h2>
-<p>I hope this gives you some clearer picture on how to use <code>exec</code> sanely and make sure that the applications are spawned correctly to get the signals sent by their environment be it systemd, docker or Kubernetes.</p>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Signal_(IPC)">Signal IPC</a>.</li>
-<li><a href="http://mywiki.wooledge.org/SignalTrap#When_is_the_signal_handled.3F">Bash does not process signals until foreground process returns.</a></li>
-<li><a href="https://unix.stackexchange.com/questions/478563/sleep-wait-and-ctrlc-propagation">Handling signals with <code>sleep</code>.</a></li>
-<li><a href="https://docs.docker.com/engine/reference/builder/#entrypoint">Docker <code>ENTRYPOINT</code> and signal handling.</a></li>
-<li><a href="https://bash.cyberciti.biz/guide/Sending_signal_to_Processes">List of signals you can send to your application.</a></li>
-<li><a href="https://linuxcommand.org/lc3_wss0150.php">How to use <code>trap</code> in your bash script.</a></li>
-<li><a href="https://stackoverflow.com/a/53410546/3848679">How signal handlers work?</a></li>
-<li><a href="https://github.com/surajssd/exec-into-container-blog">Code snippets used in this blog.</a></li>
-</ul>
+      <a href="/post/2021/03/kthw-vagrant/" class="image" style="--bg-image: url('https://suraj.io/post/2021/03/kthw-vagrant/cert.png');">
+    <img src="https://suraj.io/post/2021/03/kthw-vagrant/cert.png" alt="CKA logo">
+  </a>
+      <p>If you are studying for the <a href="https://suraj.io/post/road-to-cka/">Certified Kubernetes Administrator (CKA)</a> exam, you might have come across folks recommending <a href="https://twitter.com/kelseyhightower">Kelsey Hightower&rsquo;s</a> <a href="https://github.com/kelseyhightower/kubernetes-the-hard-way/">Kubernetes the Hard Way</a>. It is an excellent first step for someone who has no idea about the <a href="https://kubernetes.io/docs/concepts/overview/components/">components that form a Kubernetes cluster</a>. As the name suggests, it is created so that you learn the Kubernetes building blocks the &ldquo;hard way&rdquo;.</p>
+<p>But all that can be intimidating to someone who hasn&rsquo;t played with Kubernetes ever. Also, <a href="https://github.com/kelseyhightower/kubernetes-the-hard-way/">the guide</a> uses Google Cloud as a platform to install everything, which mandates you to have a Google Cloud account. But don&rsquo;t worry, there is a version of Kubernetes the Hard Way, which runs locally, hence free. Enter <a href="https://github.com/surajssd/kubernetes-the-hard-way-vagrant">Kubernetes the Hard Way Vagrant</a>!</p>
+<p>Kubernetes the Hard Way Vagrant, was started by folks at <a href="https://github.com/kinvolk/kubernetes-the-hard-way-vagrant">Kinvolk</a>. It is a set of scripts that does the exact same thing done in Kelsey&rsquo;s KTHW. The only difference is that it is automated with scripts and, at the same time, gives you the flexibility to do things manually if you like. These scripts help any newbie understand how a Kubernetes cluster can be brought up one node at a time. They can study each and every step of cluster creation and replicate those steps manually. Another minor difference is that this repository uses <a href="https://github.com/cri-o/cri-o">cri-o</a> as a container runtime instead of <a href="https://containerd.io/">containerd</a> used in Kelsey&rsquo;s tutorial.</p>
+<p>To get started, all you need is a machine with 4.8 GB of spare memory and enough CPU to run seven small VMs. Install <a href="https://www.vagrantup.com/docs/installation">Vagrant</a> and <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> to run these VMs. Once you have these prerequisites, all you need to do to get started is run the following steps:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/surajssd/kubernetes-the-hard-way-vagrant
+cd kubernetes-the-hard-way-vagrant
+./scripts/install-tools
+./scripts/setup
+</code></pre></div><p>That&rsquo;s all. And the <code>./scripts/setup</code> will start three controller machines and three worker machines, and a load balancer machine, install the Kubernetes components and run them. See the following image to understand what the architecture looks like:</p>
+<p><img src="/post/2021/03/kthw-vagrant/kthw.png" alt="Kubernetes The Hard Way Arch" title="Kubernetes The Hard Way Arch"></p>
+<p>You can run individual script invoked by <code>./scripts/setup</code> manually to get an in-depth understanding of what is happening underneath. Find more explanation on each sub-script on the <a href="https://github.com/surajssd/kubernetes-the-hard-way-vagrant#multiple-scripts">README</a>.</p>
+<p><a href="https://github.com/surajssd/kubernetes-the-hard-way-vagrant">This repository</a> is an excellent first step to doing Kelsey&rsquo;s KTHW on Vagrant. I hope you find this helpful.</p>
 
     </div>
     <footer>
@@ -335,9 +264,7 @@ exec ./signals
         
           <li><a class="article-terms-link" href="/categories/kubernetes/">kubernetes</a></li>
         
-          <li><a class="article-terms-link" href="/categories/container/">container</a></li>
-        
-          <li><a class="article-terms-link" href="/categories/bash/">bash</a></li>
+          <li><a class="article-terms-link" href="/categories/cka/">cka</a></li>
         
       
     </ul>
@@ -348,9 +275,7 @@ exec ./signals
         
           <li><a class="article-terms-link" href="/tags/kubernetes/">kubernetes</a></li>
         
-          <li><a class="article-terms-link" href="/tags/container/">container</a></li>
-        
-          <li><a class="article-terms-link" href="/tags/bash/">bash</a></li>
+          <li><a class="article-terms-link" href="/tags/cka/">cka</a></li>
         
       
     </ul>
@@ -390,10 +315,8 @@ exec ./signals
   
   <div class="pagination">
     
-      <a href="/post/2021/01/kubeadm-flatcar/" class="button left"><span>Kubernetes Cluster using Kubeadm on Flatcar Container Linux</span></a>
     
-    
-      <a href="/post/monitor-releases-of-your-favourite-software/" class="button right"><span>Monitor releases of your favourite software</span></a>
+      <a href="/post/2021/03/k8s-blr-meetup/" class="button right"><span>How we manage Kubernetes Bangalore Meetup?</span></a>
     
   </div>
 
