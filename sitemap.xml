@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://suraj.io/post/surajd-talks-links/</loc>
+    <lastmod>2024-03-30T01:00:51+05:30</lastmod>
+  </url><url>
     <loc>https://suraj.io/categories/</loc>
     <lastmod>2024-03-30T01:00:51+05:30</lastmod>
   </url><url>
@@ -18,9 +21,6 @@
     <lastmod>2024-03-30T01:00:51+05:30</lastmod>
   </url><url>
     <loc>https://suraj.io/</loc>
-    <lastmod>2024-03-30T01:00:51+05:30</lastmod>
-  </url><url>
-    <loc>https://suraj.io/post/surajd-talks-links/</loc>
     <lastmod>2024-03-30T01:00:51+05:30</lastmod>
   </url><url>
     <loc>https://suraj.io/tags/</loc>
@@ -603,5 +603,11 @@
     <lastmod>2017-03-13T00:31:57+05:30</lastmod>
   </url><url>
     <loc>https://suraj.io/about/</loc>
+  </url><url>
+    <loc>https://suraj.io/archives/</loc>
+  </url><url>
+    <loc>https://suraj.io/search/</loc>
+  </url><url>
+    <loc>https://suraj.io/series/</loc>
   </url>
 </urlset>
